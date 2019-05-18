@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeLeaf.org" lang="en">
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Student CRUD Operation</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
+</head>
+<body>
+<div class="container" align="center">
+    <table class="table">
+        <caption>Programmer welcome page</caption>
+        <thead>
+        <tr>
+            <th>Programmer ID</th>
+            <th>Name</th>
+            <th>Surname</th>
+            <th>Birthday date</th>
+            <th>email</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="programmer : ${allProgrammers}">
+            <td th:text="${programmer.id}">Programmer ID</td>
+            <td th:text="${programmer.name}">Name</td>
+            <td th:text="${programmer.surName}">Surname</td>
+            <td th:text="${programmer.birthDay}">Birthday date</td>
+            <td th:text="${programmer.email}">email</td>
+            <td>
+                <a class="button" th:href="@{'/update/' + ${programmer.id}}">Edit</a>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <a class="button-delete" th:href="@{'/delete/' + ${programmer.id}}">Delete</a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <br/>
+    <a class="button" th:href="@{'/new'}">Create a programmer</a>
+</div>
+</body>
+</html>
