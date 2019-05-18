@@ -10,7 +10,7 @@ import javax.persistence.MappedSuperclass;
 @MappedSuperclass
 @Setter
 @EntityListeners(value = ProgrammerListenerCreatedDate.class)
-public class CreatableEntity extends BaseEntity{
+public class CreatableEntity extends BaseEntity {
     @Column(name = "created_date")
     private Long createdDate;
 }

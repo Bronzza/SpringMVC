@@ -34,10 +34,10 @@ public class Programmer extends CreatableEntity {
     @Column(name = "surname")
     private String surName;
 
-    @Column (name = "birthday")
+    @Column(name = "birthday")
     private LocalDate birthDay;
 
-   @Email
-   @Column (name = "email")
+    @Email
+    @Column(name = "email")
     private String email;
 }

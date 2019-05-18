@@ -8,7 +8,7 @@ import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @Configuration
-@RequiredArgsConstructor (onConstructor = @__(@Autowired))
+@RequiredArgsConstructor(onConstructor = @__(@Autowired))
 public class WebConfig implements WebMvcConfigurer {
 
     @Autowired
@@ -17,6 +17,5 @@ public class WebConfig implements WebMvcConfigurer {
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(interceptor);
-
     }
 }

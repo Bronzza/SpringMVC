@@ -22,7 +22,7 @@ public class AppController {
     @RequestMapping("/")
     public String viewHomePage(Model model) {
         List<Programmer> allProgrammers = service.getAllProgrammers();
-        model.addAttribute("allProgrammers", allProgrammers); //list students was before
+        model.addAttribute("allProgrammers", allProgrammers);
         return "index";
     }
 
@@ -30,7 +30,7 @@ public class AppController {
     public String createNewStudentForm(@Valid Model model) {
         Programmer programmer = new Programmer();
         model.addAttribute("programmer", programmer);
-        return "programmer"; //used to be "new_student'
+        return "programmer";
     }
 
     @RequestMapping(value = "/save", method = RequestMethod.POST)
