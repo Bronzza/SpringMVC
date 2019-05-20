@@ -1,5 +1,7 @@
 package MateAcad.HomeWork20MVC.entities;
 
+import MateAcad.HomeWork20MVC.listeners.ProgrammerListener;
+import MateAcad.HomeWork20MVC.listeners.ProgrammerListenerCreatedDate;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -7,9 +9,11 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 import lombok.experimental.Accessors;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.EntityListeners;
 import javax.persistence.Table;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.Min;
@@ -26,6 +30,7 @@ import java.time.LocalDate;
 @EqualsAndHashCode(callSuper = false)
 @AllArgsConstructor
 @NoArgsConstructor
+@EntityListeners(value = ProgrammerListener.class)
 public class Programmer extends CreatableEntity {
     @Column(name = "name")
     private String name;
@@ -34,8 +39,11 @@ public class Programmer extends CreatableEntity {
     @Column(name = "surname")
     private String surName;
 
+
     @Column(name = "birthday")
+    @DateTimeFormat(pattern = "dd.MM.yyyy")
     private LocalDate birthDay;
+
 
     @Email
     @Column(name = "email")

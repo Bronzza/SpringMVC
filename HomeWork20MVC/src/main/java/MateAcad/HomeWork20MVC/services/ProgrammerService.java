@@ -7,13 +7,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
 
 @Service
 @AllArgsConstructor(onConstructor = @__(@Autowired))
 public class ProgrammerService {
 
-    ProgrammerRepository programmerRepository;
+    private ProgrammerRepository programmerRepository;
 
     public List<Programmer> getAllProgrammers() {
         return programmerRepository.findAll();
@@ -36,7 +35,6 @@ public class ProgrammerService {
     }
 
     public Programmer findProgrammerById(Long id) {
-        Optional<Programmer> programmer = programmerRepository.findById(id);
-        return (programmer.orElse(null));
+        return programmerRepository.findById(id).orElse(null);
     }
 }

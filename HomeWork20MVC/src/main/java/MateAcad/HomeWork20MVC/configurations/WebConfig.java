@@ -11,8 +11,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 @RequiredArgsConstructor(onConstructor = @__(@Autowired))
 public class WebConfig implements WebMvcConfigurer {
 
-    @Autowired
-    private ProgrammerInterceptor interceptor;
+    private final ProgrammerInterceptor interceptor;
 
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
