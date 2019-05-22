@@ -1,214 +1,720 @@
-2019-05-20 17:05:36.812  INFO 5444 --- [http-nio-8080-exec-5] M.H.interceptors.ProgrammerInterceptor   : PreHandle intercepted
-2019-05-20 17:05:36.833  INFO 5444 --- [http-nio-8080-exec-5] M.H.interceptors.ProgrammerInterceptor   : PostHandle intercepted
-2019-05-20 17:05:36.862  INFO 5444 --- [http-nio-8080-exec-5] M.H.interceptors.ProgrammerInterceptor   : afterCompletion message
-2019-05-20 17:05:36.895  INFO 5444 --- [http-nio-8080-exec-6] M.H.interceptors.ProgrammerInterceptor   : PreHandle intercepted
-2019-05-20 17:05:36.898  INFO 5444 --- [http-nio-8080-exec-6] M.H.interceptors.ProgrammerInterceptor   : PostHandle intercepted
-2019-05-20 17:05:36.898  INFO 5444 --- [http-nio-8080-exec-6] M.H.interceptors.ProgrammerInterceptor   : afterCompletion message
-2019-05-20 17:05:50.807  INFO 5444 --- [http-nio-8080-exec-8] M.H.interceptors.ProgrammerInterceptor   : PreHandle intercepted
-2019-05-20 17:05:54.124 DEBUG 5444 --- [http-nio-8080-exec-8] o.h.e.t.internal.TransactionImpl         : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
-2019-05-20 17:05:54.124 DEBUG 5444 --- [http-nio-8080-exec-8] o.h.e.t.internal.TransactionImpl         : begin
-2019-05-20 17:05:54.136 DEBUG 5444 --- [http-nio-8080-exec-8] org.hibernate.engine.spi.ActionQueue     : Executing identity-insert immediately
-2019-05-20 17:05:54.184 DEBUG 5444 --- [http-nio-8080-exec-8] org.hibernate.SQL                        : insert into programmers (created_date, birthday, email, name, surname) values (?, ?, ?, ?, ?)
-2019-05-20 17:05:54.206 DEBUG 5444 --- [http-nio-8080-exec-8] o.h.id.IdentifierGeneratorHelper         : Natively generated identity: 69
-2019-05-20 17:05:54.206 DEBUG 5444 --- [http-nio-8080-exec-8] o.h.r.j.i.ResourceRegistryStandardImpl   : HHH000387: ResultSet's statement was not registered
-2019-05-20 17:05:54.208 DEBUG 5444 --- [http-nio-8080-exec-8] o.h.e.t.internal.TransactionImpl         : committing
-2019-05-20 17:05:54.208 DEBUG 5444 --- [http-nio-8080-exec-8] o.h.e.i.AbstractFlushingEventListener    : Processing flush-time cascades
-2019-05-20 17:05:54.208 DEBUG 5444 --- [http-nio-8080-exec-8] o.h.e.i.AbstractFlushingEventListener    : Dirty checking collections
-2019-05-20 17:05:54.210 DEBUG 5444 --- [http-nio-8080-exec-8] o.h.e.i.AbstractFlushingEventListener    : Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
-2019-05-20 17:05:54.210 DEBUG 5444 --- [http-nio-8080-exec-8] o.h.e.i.AbstractFlushingEventListener    : Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
-2019-05-20 17:05:54.211 DEBUG 5444 --- [http-nio-8080-exec-8] o.hibernate.internal.util.EntityPrinter  : Listing entities:
-2019-05-20 17:05:54.211 DEBUG 5444 --- [http-nio-8080-exec-8] o.hibernate.internal.util.EntityPrinter  : MateAcad.HomeWork20MVC.entities.Programmer{birthDay=1984-01-02, createdDate=1558361154129, surName=aaa, name=aaa, id=69, email=aaa@bbb.net}
-2019-05-20 17:05:54.227  INFO 5444 --- [http-nio-8080-exec-8] M.H.interceptors.ProgrammerInterceptor   : PostHandle intercepted
-2019-05-20 17:05:54.234  INFO 5444 --- [http-nio-8080-exec-8] M.H.interceptors.ProgrammerInterceptor   : afterCompletion message
-2019-05-20 17:05:54.239  INFO 5444 --- [http-nio-8080-exec-9] M.H.interceptors.ProgrammerInterceptor   : PreHandle intercepted
-2019-05-20 17:05:54.240 DEBUG 5444 --- [http-nio-8080-exec-9] o.h.e.t.internal.TransactionImpl         : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
-2019-05-20 17:05:54.240 DEBUG 5444 --- [http-nio-8080-exec-9] o.h.e.t.internal.TransactionImpl         : begin
-2019-05-20 17:05:54.241 DEBUG 5444 --- [http-nio-8080-exec-9] o.h.q.c.internal.CriteriaQueryImpl       : Rendered criteria query -> select generatedAlias0 from Programmer as generatedAlias0
-2019-05-20 17:05:54.241 DEBUG 5444 --- [http-nio-8080-exec-9] org.hibernate.SQL                        : select programmer0_.id as id1_0_, programmer0_.created_date as created_2_0_, programmer0_.birthday as birthday3_0_, programmer0_.email as email4_0_, programmer0_.name as name5_0_, programmer0_.surname as surname6_0_ from programmers programmer0_
-2019-05-20 17:05:54.242 DEBUG 5444 --- [http-nio-8080-exec-9] org.hibernate.loader.Loader              : Result set row: 0
-2019-05-20 17:05:54.242 DEBUG 5444 --- [http-nio-8080-exec-9] org.hibernate.loader.Loader              : Result row: EntityKey[MateAcad.HomeWork20MVC.entities.Programmer#8]
-2019-05-20 17:05:54.242 DEBUG 5444 --- [http-nio-8080-exec-9] org.hibernate.loader.Loader              : Result set row: 1
-2019-05-20 17:05:54.242 DEBUG 5444 --- [http-nio-8080-exec-9] org.hibernate.loader.Loader              : Result row: EntityKey[MateAcad.HomeWork20MVC.entities.Programmer#9]
-2019-05-20 17:05:54.243 DEBUG 5444 --- [http-nio-8080-exec-9] org.hibernate.loader.Loader              : Result set row: 2
-2019-05-20 17:05:54.243 DEBUG 5444 --- [http-nio-8080-exec-9] org.hibernate.loader.Loader              : Result row: EntityKey[MateAcad.HomeWork20MVC.entities.Programmer#10]
-2019-05-20 17:05:54.243 DEBUG 5444 --- [http-nio-8080-exec-9] org.hibernate.loader.Loader              : Result set row: 3
-2019-05-20 17:05:54.243 DEBUG 5444 --- [http-nio-8080-exec-9] org.hibernate.loader.Loader              : Result row: EntityKey[MateAcad.HomeWork20MVC.entities.Programmer#23]
-2019-05-20 17:05:54.243 DEBUG 5444 --- [http-nio-8080-exec-9] org.hibernate.loader.Loader              : Result set row: 4
-2019-05-20 17:05:54.243 DEBUG 5444 --- [http-nio-8080-exec-9] org.hibernate.loader.Loader              : Result row: EntityKey[MateAcad.HomeWork20MVC.entities.Programmer#47]
-2019-05-20 17:05:54.243 DEBUG 5444 --- [http-nio-8080-exec-9] org.hibernate.loader.Loader              : Result set row: 5
-2019-05-20 17:05:54.244 DEBUG 5444 --- [http-nio-8080-exec-9] org.hibernate.loader.Loader              : Result row: EntityKey[MateAcad.HomeWork20MVC.entities.Programmer#48]
-2019-05-20 17:05:54.244 DEBUG 5444 --- [http-nio-8080-exec-9] org.hibernate.loader.Loader              : Result set row: 6
-2019-05-20 17:05:54.244 DEBUG 5444 --- [http-nio-8080-exec-9] org.hibernate.loader.Loader              : Result row: EntityKey[MateAcad.HomeWork20MVC.entities.Programmer#54]
-2019-05-20 17:05:54.244 DEBUG 5444 --- [http-nio-8080-exec-9] org.hibernate.loader.Loader              : Result set row: 7
-2019-05-20 17:05:54.244 DEBUG 5444 --- [http-nio-8080-exec-9] org.hibernate.loader.Loader              : Result row: EntityKey[MateAcad.HomeWork20MVC.entities.Programmer#61]
-2019-05-20 17:05:54.244 DEBUG 5444 --- [http-nio-8080-exec-9] org.hibernate.loader.Loader              : Result set row: 8
-2019-05-20 17:05:54.244 DEBUG 5444 --- [http-nio-8080-exec-9] org.hibernate.loader.Loader              : Result row: EntityKey[MateAcad.HomeWork20MVC.entities.Programmer#62]
-2019-05-20 17:05:54.244 DEBUG 5444 --- [http-nio-8080-exec-9] org.hibernate.loader.Loader              : Result set row: 9
-2019-05-20 17:05:54.244 DEBUG 5444 --- [http-nio-8080-exec-9] org.hibernate.loader.Loader              : Result row: EntityKey[MateAcad.HomeWork20MVC.entities.Programmer#64]
-2019-05-20 17:05:54.245 DEBUG 5444 --- [http-nio-8080-exec-9] org.hibernate.loader.Loader              : Result set row: 10
-2019-05-20 17:05:54.245 DEBUG 5444 --- [http-nio-8080-exec-9] org.hibernate.loader.Loader              : Result row: EntityKey[MateAcad.HomeWork20MVC.entities.Programmer#65]
-2019-05-20 17:05:54.245 DEBUG 5444 --- [http-nio-8080-exec-9] org.hibernate.loader.Loader              : Result set row: 11
-2019-05-20 17:05:54.245 DEBUG 5444 --- [http-nio-8080-exec-9] org.hibernate.loader.Loader              : Result row: EntityKey[MateAcad.HomeWork20MVC.entities.Programmer#66]
-2019-05-20 17:05:54.245 DEBUG 5444 --- [http-nio-8080-exec-9] org.hibernate.loader.Loader              : Result set row: 12
-2019-05-20 17:05:54.245 DEBUG 5444 --- [http-nio-8080-exec-9] org.hibernate.loader.Loader              : Result row: EntityKey[MateAcad.HomeWork20MVC.entities.Programmer#68]
-2019-05-20 17:05:54.245 DEBUG 5444 --- [http-nio-8080-exec-9] org.hibernate.loader.Loader              : Result set row: 13
-2019-05-20 17:05:54.245 DEBUG 5444 --- [http-nio-8080-exec-9] org.hibernate.loader.Loader              : Result row: EntityKey[MateAcad.HomeWork20MVC.entities.Programmer#69]
-2019-05-20 17:05:54.246 DEBUG 5444 --- [http-nio-8080-exec-9] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [MateAcad.HomeWork20MVC.entities.Programmer#8]
-2019-05-20 17:05:54.246 DEBUG 5444 --- [http-nio-8080-exec-9] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [MateAcad.HomeWork20MVC.entities.Programmer#8]
-2019-05-20 17:05:54.246 DEBUG 5444 --- [http-nio-8080-exec-9] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [MateAcad.HomeWork20MVC.entities.Programmer#9]
-2019-05-20 17:05:54.246 DEBUG 5444 --- [http-nio-8080-exec-9] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [MateAcad.HomeWork20MVC.entities.Programmer#9]
-2019-05-20 17:05:54.246 DEBUG 5444 --- [http-nio-8080-exec-9] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [MateAcad.HomeWork20MVC.entities.Programmer#10]
-2019-05-20 17:05:54.246 DEBUG 5444 --- [http-nio-8080-exec-9] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [MateAcad.HomeWork20MVC.entities.Programmer#10]
-2019-05-20 17:05:54.246 DEBUG 5444 --- [http-nio-8080-exec-9] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [MateAcad.HomeWork20MVC.entities.Programmer#23]
-2019-05-20 17:05:54.246 DEBUG 5444 --- [http-nio-8080-exec-9] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [MateAcad.HomeWork20MVC.entities.Programmer#23]
-2019-05-20 17:05:54.246 DEBUG 5444 --- [http-nio-8080-exec-9] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [MateAcad.HomeWork20MVC.entities.Programmer#47]
-2019-05-20 17:05:54.246 DEBUG 5444 --- [http-nio-8080-exec-9] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [MateAcad.HomeWork20MVC.entities.Programmer#47]
-2019-05-20 17:05:54.246 DEBUG 5444 --- [http-nio-8080-exec-9] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [MateAcad.HomeWork20MVC.entities.Programmer#48]
-2019-05-20 17:05:54.246 DEBUG 5444 --- [http-nio-8080-exec-9] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [MateAcad.HomeWork20MVC.entities.Programmer#48]
-2019-05-20 17:05:54.246 DEBUG 5444 --- [http-nio-8080-exec-9] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [MateAcad.HomeWork20MVC.entities.Programmer#54]
-2019-05-20 17:05:54.246 DEBUG 5444 --- [http-nio-8080-exec-9] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [MateAcad.HomeWork20MVC.entities.Programmer#54]
-2019-05-20 17:05:54.246 DEBUG 5444 --- [http-nio-8080-exec-9] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [MateAcad.HomeWork20MVC.entities.Programmer#61]
-2019-05-20 17:05:54.246 DEBUG 5444 --- [http-nio-8080-exec-9] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [MateAcad.HomeWork20MVC.entities.Programmer#61]
-2019-05-20 17:05:54.246 DEBUG 5444 --- [http-nio-8080-exec-9] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [MateAcad.HomeWork20MVC.entities.Programmer#62]
-2019-05-20 17:05:54.247 DEBUG 5444 --- [http-nio-8080-exec-9] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [MateAcad.HomeWork20MVC.entities.Programmer#62]
-2019-05-20 17:05:54.247 DEBUG 5444 --- [http-nio-8080-exec-9] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [MateAcad.HomeWork20MVC.entities.Programmer#64]
-2019-05-20 17:05:54.247 DEBUG 5444 --- [http-nio-8080-exec-9] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [MateAcad.HomeWork20MVC.entities.Programmer#64]
-2019-05-20 17:05:54.247 DEBUG 5444 --- [http-nio-8080-exec-9] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [MateAcad.HomeWork20MVC.entities.Programmer#65]
-2019-05-20 17:05:54.247 DEBUG 5444 --- [http-nio-8080-exec-9] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [MateAcad.HomeWork20MVC.entities.Programmer#65]
-2019-05-20 17:05:54.247 DEBUG 5444 --- [http-nio-8080-exec-9] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [MateAcad.HomeWork20MVC.entities.Programmer#66]
-2019-05-20 17:05:54.247 DEBUG 5444 --- [http-nio-8080-exec-9] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [MateAcad.HomeWork20MVC.entities.Programmer#66]
-2019-05-20 17:05:54.247 DEBUG 5444 --- [http-nio-8080-exec-9] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [MateAcad.HomeWork20MVC.entities.Programmer#68]
-2019-05-20 17:05:54.247 DEBUG 5444 --- [http-nio-8080-exec-9] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [MateAcad.HomeWork20MVC.entities.Programmer#68]
-2019-05-20 17:05:54.247 DEBUG 5444 --- [http-nio-8080-exec-9] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [MateAcad.HomeWork20MVC.entities.Programmer#69]
-2019-05-20 17:05:54.247 DEBUG 5444 --- [http-nio-8080-exec-9] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [MateAcad.HomeWork20MVC.entities.Programmer#69]
-2019-05-20 17:05:54.247 DEBUG 5444 --- [http-nio-8080-exec-9] o.h.e.t.internal.TransactionImpl         : committing
-2019-05-20 17:05:54.249  INFO 5444 --- [http-nio-8080-exec-9] M.H.interceptors.ProgrammerInterceptor   : PostHandle intercepted
-2019-05-20 17:05:54.265  INFO 5444 --- [http-nio-8080-exec-9] M.H.interceptors.ProgrammerInterceptor   : afterCompletion message
-2019-05-20 17:05:54.392  INFO 5444 --- [http-nio-8080-exec-10] M.H.interceptors.ProgrammerInterceptor   : PreHandle intercepted
-2019-05-20 17:05:54.397  INFO 5444 --- [http-nio-8080-exec-10] M.H.interceptors.ProgrammerInterceptor   : PostHandle intercepted
-2019-05-20 17:05:54.398  INFO 5444 --- [http-nio-8080-exec-10] M.H.interceptors.ProgrammerInterceptor   : afterCompletion message
-2019-05-20 17:05:59.545  INFO 5444 --- [http-nio-8080-exec-1] M.H.interceptors.ProgrammerInterceptor   : PreHandle intercepted
-2019-05-20 17:05:59.553 DEBUG 5444 --- [http-nio-8080-exec-1] o.h.e.t.internal.TransactionImpl         : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
-2019-05-20 17:05:59.553 DEBUG 5444 --- [http-nio-8080-exec-1] o.h.e.t.internal.TransactionImpl         : begin
-2019-05-20 17:05:59.557 DEBUG 5444 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : select programmer0_.id as id1_0_0_, programmer0_.created_date as created_2_0_0_, programmer0_.birthday as birthday3_0_0_, programmer0_.email as email4_0_0_, programmer0_.name as name5_0_0_, programmer0_.surname as surname6_0_0_ from programmers programmer0_ where programmer0_.id=?
-2019-05-20 17:05:59.561 DEBUG 5444 --- [http-nio-8080-exec-1] o.h.l.p.e.p.i.ResultSetProcessorImpl     : Starting ResultSet row #0
-2019-05-20 17:05:59.562 DEBUG 5444 --- [http-nio-8080-exec-1] l.p.e.p.i.EntityReferenceInitializerImpl : On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
-2019-05-20 17:05:59.564 DEBUG 5444 --- [http-nio-8080-exec-1] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [MateAcad.HomeWork20MVC.entities.Programmer#69]
-2019-05-20 17:05:59.564 DEBUG 5444 --- [http-nio-8080-exec-1] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [MateAcad.HomeWork20MVC.entities.Programmer#69]
-2019-05-20 17:05:59.565 DEBUG 5444 --- [http-nio-8080-exec-1] o.h.r.j.i.ResourceRegistryStandardImpl   : HHH000387: ResultSet's statement was not registered
-2019-05-20 17:05:59.565 DEBUG 5444 --- [http-nio-8080-exec-1] .l.e.p.AbstractLoadPlanBasedEntityLoader : Done entity load : MateAcad.HomeWork20MVC.entities.Programmer#69
-2019-05-20 17:05:59.565 DEBUG 5444 --- [http-nio-8080-exec-1] o.h.e.t.internal.TransactionImpl         : committing
-2019-05-20 17:06:05.978  INFO 5444 --- [http-nio-8080-exec-1] M.H.interceptors.ProgrammerInterceptor   : PostHandle intercepted
-2019-05-20 17:06:05.979  INFO 5444 --- [http-nio-8080-exec-3] M.H.interceptors.ProgrammerInterceptor   : PreHandle intercepted
-2019-05-20 17:06:05.981 DEBUG 5444 --- [http-nio-8080-exec-3] o.h.e.t.internal.TransactionImpl         : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
-2019-05-20 17:06:05.981 DEBUG 5444 --- [http-nio-8080-exec-3] o.h.e.t.internal.TransactionImpl         : begin
-2019-05-20 17:06:05.982 DEBUG 5444 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : select programmer0_.id as id1_0_0_, programmer0_.created_date as created_2_0_0_, programmer0_.birthday as birthday3_0_0_, programmer0_.email as email4_0_0_, programmer0_.name as name5_0_0_, programmer0_.surname as surname6_0_0_ from programmers programmer0_ where programmer0_.id=?
-2019-05-20 17:06:05.984 DEBUG 5444 --- [http-nio-8080-exec-3] o.h.l.p.e.p.i.ResultSetProcessorImpl     : Starting ResultSet row #0
-2019-05-20 17:06:05.984 DEBUG 5444 --- [http-nio-8080-exec-3] l.p.e.p.i.EntityReferenceInitializerImpl : On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
-2019-05-20 17:06:05.984 DEBUG 5444 --- [http-nio-8080-exec-3] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [MateAcad.HomeWork20MVC.entities.Programmer#69]
-2019-05-20 17:06:05.984 DEBUG 5444 --- [http-nio-8080-exec-3] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [MateAcad.HomeWork20MVC.entities.Programmer#69]
-2019-05-20 17:06:05.985 DEBUG 5444 --- [http-nio-8080-exec-3] o.h.r.j.i.ResourceRegistryStandardImpl   : HHH000387: ResultSet's statement was not registered
-2019-05-20 17:06:05.985 DEBUG 5444 --- [http-nio-8080-exec-3] .l.e.p.AbstractLoadPlanBasedEntityLoader : Done entity load : MateAcad.HomeWork20MVC.entities.Programmer#69
-2019-05-20 17:06:05.985 DEBUG 5444 --- [http-nio-8080-exec-3] o.h.e.t.internal.TransactionImpl         : committing
-2019-05-20 17:06:07.383  INFO 5444 --- [http-nio-8080-exec-1] M.H.interceptors.ProgrammerInterceptor   : afterCompletion message
-2019-05-20 17:06:07.388  INFO 5444 --- [http-nio-8080-exec-3] M.H.interceptors.ProgrammerInterceptor   : PostHandle intercepted
-2019-05-20 17:06:07.400  INFO 5444 --- [http-nio-8080-exec-3] M.H.interceptors.ProgrammerInterceptor   : afterCompletion message
-2019-05-20 17:06:07.429  INFO 5444 --- [http-nio-8080-exec-4] M.H.interceptors.ProgrammerInterceptor   : PreHandle intercepted
-2019-05-20 17:06:07.433  INFO 5444 --- [http-nio-8080-exec-4] M.H.interceptors.ProgrammerInterceptor   : PostHandle intercepted
-2019-05-20 17:06:07.434  INFO 5444 --- [http-nio-8080-exec-4] M.H.interceptors.ProgrammerInterceptor   : afterCompletion message
-2019-05-20 17:06:12.723  INFO 5444 --- [http-nio-8080-exec-5] M.H.interceptors.ProgrammerInterceptor   : PreHandle intercepted
-2019-05-20 17:06:15.184 DEBUG 5444 --- [http-nio-8080-exec-5] o.h.e.t.internal.TransactionImpl         : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
-2019-05-20 17:06:15.185 DEBUG 5444 --- [http-nio-8080-exec-5] o.h.e.t.internal.TransactionImpl         : begin
-2019-05-20 17:06:15.190 DEBUG 5444 --- [http-nio-8080-exec-5] o.h.e.i.DefaultMergeEventListener        : EntityCopyObserver strategy: disallow
-2019-05-20 17:06:15.195 DEBUG 5444 --- [http-nio-8080-exec-5] org.hibernate.loader.Loader              : Loading entity: [MateAcad.HomeWork20MVC.entities.Programmer#69]
-2019-05-20 17:06:15.195 DEBUG 5444 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select programmer0_.id as id1_0_0_, programmer0_.created_date as created_2_0_0_, programmer0_.birthday as birthday3_0_0_, programmer0_.email as email4_0_0_, programmer0_.name as name5_0_0_, programmer0_.surname as surname6_0_0_ from programmers programmer0_ where programmer0_.id=?
-2019-05-20 17:06:15.196 DEBUG 5444 --- [http-nio-8080-exec-5] org.hibernate.loader.Loader              : Result set row: 0
-2019-05-20 17:06:15.197 DEBUG 5444 --- [http-nio-8080-exec-5] org.hibernate.loader.Loader              : Result row: EntityKey[MateAcad.HomeWork20MVC.entities.Programmer#69]
-2019-05-20 17:06:15.197 DEBUG 5444 --- [http-nio-8080-exec-5] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [MateAcad.HomeWork20MVC.entities.Programmer#69]
-2019-05-20 17:06:15.197 DEBUG 5444 --- [http-nio-8080-exec-5] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [MateAcad.HomeWork20MVC.entities.Programmer#69]
-2019-05-20 17:06:15.198 DEBUG 5444 --- [http-nio-8080-exec-5] org.hibernate.loader.Loader              : Done entity load
-2019-05-20 17:06:15.198 DEBUG 5444 --- [http-nio-8080-exec-5] o.h.e.t.internal.TransactionImpl         : committing
-2019-05-20 17:06:15.198 DEBUG 5444 --- [http-nio-8080-exec-5] o.h.e.i.AbstractFlushingEventListener    : Processing flush-time cascades
-2019-05-20 17:06:15.198 DEBUG 5444 --- [http-nio-8080-exec-5] o.h.e.i.AbstractFlushingEventListener    : Dirty checking collections
-2019-05-20 17:06:15.200 DEBUG 5444 --- [http-nio-8080-exec-5] o.h.e.i.AbstractFlushingEventListener    : Flushed: 0 insertions, 1 updates, 0 deletions to 1 objects
-2019-05-20 17:06:15.200 DEBUG 5444 --- [http-nio-8080-exec-5] o.h.e.i.AbstractFlushingEventListener    : Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
-2019-05-20 17:06:15.200 DEBUG 5444 --- [http-nio-8080-exec-5] o.hibernate.internal.util.EntityPrinter  : Listing entities:
-2019-05-20 17:06:15.201 DEBUG 5444 --- [http-nio-8080-exec-5] o.hibernate.internal.util.EntityPrinter  : MateAcad.HomeWork20MVC.entities.Programmer{birthDay=1984-01-02, createdDate=null, surName=aaa, name=aaa, id=69, email=aaa@bbb.net}
-2019-05-20 17:06:15.206 DEBUG 5444 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : update programmers set created_date=?, birthday=?, email=?, name=?, surname=? where id=?
-2019-05-20 17:06:15.537  INFO 5444 --- [http-nio-8080-exec-5] M.H.interceptors.ProgrammerInterceptor   : PostHandle intercepted
-2019-05-20 17:06:15.539  INFO 5444 --- [http-nio-8080-exec-5] M.H.interceptors.ProgrammerInterceptor   : afterCompletion message
-2019-05-20 17:06:15.545  INFO 5444 --- [http-nio-8080-exec-7] M.H.interceptors.ProgrammerInterceptor   : PreHandle intercepted
-2019-05-20 17:06:15.546 DEBUG 5444 --- [http-nio-8080-exec-7] o.h.e.t.internal.TransactionImpl         : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
-2019-05-20 17:06:15.546 DEBUG 5444 --- [http-nio-8080-exec-7] o.h.e.t.internal.TransactionImpl         : begin
-2019-05-20 17:06:15.547 DEBUG 5444 --- [http-nio-8080-exec-7] o.h.q.c.internal.CriteriaQueryImpl       : Rendered criteria query -> select generatedAlias0 from Programmer as generatedAlias0
-2019-05-20 17:06:15.548 DEBUG 5444 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : select programmer0_.id as id1_0_, programmer0_.created_date as created_2_0_, programmer0_.birthday as birthday3_0_, programmer0_.email as email4_0_, programmer0_.name as name5_0_, programmer0_.surname as surname6_0_ from programmers programmer0_
-2019-05-20 17:06:15.549 DEBUG 5444 --- [http-nio-8080-exec-7] org.hibernate.loader.Loader              : Result set row: 0
-2019-05-20 17:06:15.549 DEBUG 5444 --- [http-nio-8080-exec-7] org.hibernate.loader.Loader              : Result row: EntityKey[MateAcad.HomeWork20MVC.entities.Programmer#8]
-2019-05-20 17:06:15.550 DEBUG 5444 --- [http-nio-8080-exec-7] org.hibernate.loader.Loader              : Result set row: 1
-2019-05-20 17:06:15.550 DEBUG 5444 --- [http-nio-8080-exec-7] org.hibernate.loader.Loader              : Result row: EntityKey[MateAcad.HomeWork20MVC.entities.Programmer#9]
-2019-05-20 17:06:15.550 DEBUG 5444 --- [http-nio-8080-exec-7] org.hibernate.loader.Loader              : Result set row: 2
-2019-05-20 17:06:15.550 DEBUG 5444 --- [http-nio-8080-exec-7] org.hibernate.loader.Loader              : Result row: EntityKey[MateAcad.HomeWork20MVC.entities.Programmer#10]
-2019-05-20 17:06:15.550 DEBUG 5444 --- [http-nio-8080-exec-7] org.hibernate.loader.Loader              : Result set row: 3
-2019-05-20 17:06:15.550 DEBUG 5444 --- [http-nio-8080-exec-7] org.hibernate.loader.Loader              : Result row: EntityKey[MateAcad.HomeWork20MVC.entities.Programmer#23]
-2019-05-20 17:06:15.551 DEBUG 5444 --- [http-nio-8080-exec-7] org.hibernate.loader.Loader              : Result set row: 4
-2019-05-20 17:06:15.551 DEBUG 5444 --- [http-nio-8080-exec-7] org.hibernate.loader.Loader              : Result row: EntityKey[MateAcad.HomeWork20MVC.entities.Programmer#47]
-2019-05-20 17:06:15.551 DEBUG 5444 --- [http-nio-8080-exec-7] org.hibernate.loader.Loader              : Result set row: 5
-2019-05-20 17:06:15.551 DEBUG 5444 --- [http-nio-8080-exec-7] org.hibernate.loader.Loader              : Result row: EntityKey[MateAcad.HomeWork20MVC.entities.Programmer#48]
-2019-05-20 17:06:15.551 DEBUG 5444 --- [http-nio-8080-exec-7] org.hibernate.loader.Loader              : Result set row: 6
-2019-05-20 17:06:15.551 DEBUG 5444 --- [http-nio-8080-exec-7] org.hibernate.loader.Loader              : Result row: EntityKey[MateAcad.HomeWork20MVC.entities.Programmer#54]
-2019-05-20 17:06:15.551 DEBUG 5444 --- [http-nio-8080-exec-7] org.hibernate.loader.Loader              : Result set row: 7
-2019-05-20 17:06:15.551 DEBUG 5444 --- [http-nio-8080-exec-7] org.hibernate.loader.Loader              : Result row: EntityKey[MateAcad.HomeWork20MVC.entities.Programmer#61]
-2019-05-20 17:06:15.552 DEBUG 5444 --- [http-nio-8080-exec-7] org.hibernate.loader.Loader              : Result set row: 8
-2019-05-20 17:06:15.552 DEBUG 5444 --- [http-nio-8080-exec-7] org.hibernate.loader.Loader              : Result row: EntityKey[MateAcad.HomeWork20MVC.entities.Programmer#62]
-2019-05-20 17:06:15.552 DEBUG 5444 --- [http-nio-8080-exec-7] org.hibernate.loader.Loader              : Result set row: 9
-2019-05-20 17:06:15.552 DEBUG 5444 --- [http-nio-8080-exec-7] org.hibernate.loader.Loader              : Result row: EntityKey[MateAcad.HomeWork20MVC.entities.Programmer#64]
-2019-05-20 17:06:15.552 DEBUG 5444 --- [http-nio-8080-exec-7] org.hibernate.loader.Loader              : Result set row: 10
-2019-05-20 17:06:15.552 DEBUG 5444 --- [http-nio-8080-exec-7] org.hibernate.loader.Loader              : Result row: EntityKey[MateAcad.HomeWork20MVC.entities.Programmer#65]
-2019-05-20 17:06:15.552 DEBUG 5444 --- [http-nio-8080-exec-7] org.hibernate.loader.Loader              : Result set row: 11
-2019-05-20 17:06:15.553 DEBUG 5444 --- [http-nio-8080-exec-7] org.hibernate.loader.Loader              : Result row: EntityKey[MateAcad.HomeWork20MVC.entities.Programmer#66]
-2019-05-20 17:06:15.553 DEBUG 5444 --- [http-nio-8080-exec-7] org.hibernate.loader.Loader              : Result set row: 12
-2019-05-20 17:06:15.553 DEBUG 5444 --- [http-nio-8080-exec-7] org.hibernate.loader.Loader              : Result row: EntityKey[MateAcad.HomeWork20MVC.entities.Programmer#68]
-2019-05-20 17:06:15.553 DEBUG 5444 --- [http-nio-8080-exec-7] org.hibernate.loader.Loader              : Result set row: 13
-2019-05-20 17:06:15.553 DEBUG 5444 --- [http-nio-8080-exec-7] org.hibernate.loader.Loader              : Result row: EntityKey[MateAcad.HomeWork20MVC.entities.Programmer#69]
-2019-05-20 17:06:15.553 DEBUG 5444 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [MateAcad.HomeWork20MVC.entities.Programmer#8]
-2019-05-20 17:06:15.553 DEBUG 5444 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [MateAcad.HomeWork20MVC.entities.Programmer#8]
-2019-05-20 17:06:15.553 DEBUG 5444 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [MateAcad.HomeWork20MVC.entities.Programmer#9]
-2019-05-20 17:06:15.553 DEBUG 5444 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [MateAcad.HomeWork20MVC.entities.Programmer#9]
-2019-05-20 17:06:15.553 DEBUG 5444 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [MateAcad.HomeWork20MVC.entities.Programmer#10]
-2019-05-20 17:06:15.553 DEBUG 5444 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [MateAcad.HomeWork20MVC.entities.Programmer#10]
-2019-05-20 17:06:15.553 DEBUG 5444 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [MateAcad.HomeWork20MVC.entities.Programmer#23]
-2019-05-20 17:06:15.554 DEBUG 5444 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [MateAcad.HomeWork20MVC.entities.Programmer#23]
-2019-05-20 17:06:15.554 DEBUG 5444 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [MateAcad.HomeWork20MVC.entities.Programmer#47]
-2019-05-20 17:06:15.554 DEBUG 5444 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [MateAcad.HomeWork20MVC.entities.Programmer#47]
-2019-05-20 17:06:15.554 DEBUG 5444 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [MateAcad.HomeWork20MVC.entities.Programmer#48]
-2019-05-20 17:06:15.554 DEBUG 5444 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [MateAcad.HomeWork20MVC.entities.Programmer#48]
-2019-05-20 17:06:15.554 DEBUG 5444 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [MateAcad.HomeWork20MVC.entities.Programmer#54]
-2019-05-20 17:06:15.554 DEBUG 5444 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [MateAcad.HomeWork20MVC.entities.Programmer#54]
-2019-05-20 17:06:15.554 DEBUG 5444 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [MateAcad.HomeWork20MVC.entities.Programmer#61]
-2019-05-20 17:06:15.555 DEBUG 5444 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [MateAcad.HomeWork20MVC.entities.Programmer#61]
-2019-05-20 17:06:15.555 DEBUG 5444 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [MateAcad.HomeWork20MVC.entities.Programmer#62]
-2019-05-20 17:06:15.555 DEBUG 5444 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [MateAcad.HomeWork20MVC.entities.Programmer#62]
-2019-05-20 17:06:15.555 DEBUG 5444 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [MateAcad.HomeWork20MVC.entities.Programmer#64]
-2019-05-20 17:06:15.555 DEBUG 5444 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [MateAcad.HomeWork20MVC.entities.Programmer#64]
-2019-05-20 17:06:15.555 DEBUG 5444 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [MateAcad.HomeWork20MVC.entities.Programmer#65]
-2019-05-20 17:06:15.555 DEBUG 5444 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [MateAcad.HomeWork20MVC.entities.Programmer#65]
-2019-05-20 17:06:15.555 DEBUG 5444 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [MateAcad.HomeWork20MVC.entities.Programmer#66]
-2019-05-20 17:06:15.555 DEBUG 5444 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [MateAcad.HomeWork20MVC.entities.Programmer#66]
-2019-05-20 17:06:15.555 DEBUG 5444 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [MateAcad.HomeWork20MVC.entities.Programmer#68]
-2019-05-20 17:06:15.555 DEBUG 5444 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [MateAcad.HomeWork20MVC.entities.Programmer#68]
-2019-05-20 17:06:15.556 DEBUG 5444 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [MateAcad.HomeWork20MVC.entities.Programmer#69]
-2019-05-20 17:06:15.556 DEBUG 5444 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [MateAcad.HomeWork20MVC.entities.Programmer#69]
-2019-05-20 17:06:15.556 DEBUG 5444 --- [http-nio-8080-exec-7] o.h.e.t.internal.TransactionImpl         : committing
-2019-05-20 17:06:15.558  INFO 5444 --- [http-nio-8080-exec-7] M.H.interceptors.ProgrammerInterceptor   : PostHandle intercepted
-2019-05-20 17:06:15.569  INFO 5444 --- [http-nio-8080-exec-7] M.H.interceptors.ProgrammerInterceptor   : afterCompletion message
-2019-05-20 17:06:15.597  INFO 5444 --- [http-nio-8080-exec-8] M.H.interceptors.ProgrammerInterceptor   : PreHandle intercepted
-2019-05-20 17:06:15.602  INFO 5444 --- [http-nio-8080-exec-8] M.H.interceptors.ProgrammerInterceptor   : PostHandle intercepted
-2019-05-20 17:06:15.602  INFO 5444 --- [http-nio-8080-exec-8] M.H.interceptors.ProgrammerInterceptor   : afterCompletion message
-2019-05-20 17:07:03.003  INFO 5444 --- [Thread-8] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2019-05-20 17:07:03.004  INFO 5444 --- [Thread-8] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2019-05-20 17:07:03.004 DEBUG 5444 --- [Thread-8] o.hibernate.internal.SessionFactoryImpl  : HHH000031: Closing
-2019-05-20 17:07:03.004 DEBUG 5444 --- [Thread-8] o.h.type.spi.TypeConfiguration$Scope     : Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@452aa7bd] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@79f2d3ed]
-2019-05-20 17:07:03.005 DEBUG 5444 --- [Thread-8] o.h.s.i.AbstractServiceRegistryImpl      : Implicitly destroying ServiceRegistry on de-registration of all child ServiceRegistries
-2019-05-20 17:07:03.005 DEBUG 5444 --- [Thread-8] o.h.b.r.i.BootstrapServiceRegistryImpl   : Implicitly destroying Boot-strap registry on de-registration of all child ServiceRegistries
-2019-05-20 17:07:03.007  INFO 5444 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2019-05-20 17:07:03.011  INFO 5444 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-05-22 00:04:43.238  INFO 16100 --- [Thread-8] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-05-22 00:04:43.244  INFO 16100 --- [Thread-8] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-05-22 00:04:43.244 DEBUG 16100 --- [Thread-8] o.hibernate.internal.SessionFactoryImpl  : HHH000031: Closing
+2019-05-22 00:04:43.245 DEBUG 16100 --- [Thread-8] o.h.type.spi.TypeConfiguration$Scope     : Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@24bf8752] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@7e75a0b]
+2019-05-22 00:04:43.247 DEBUG 16100 --- [Thread-8] o.h.s.i.AbstractServiceRegistryImpl      : Implicitly destroying ServiceRegistry on de-registration of all child ServiceRegistries
+2019-05-22 00:04:43.247 DEBUG 16100 --- [Thread-8] o.h.b.r.i.BootstrapServiceRegistryImpl   : Implicitly destroying Boot-strap registry on de-registration of all child ServiceRegistries
+2019-05-22 00:04:43.250  INFO 16100 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-05-22 00:04:43.257  INFO 16100 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-05-22 16:34:05.453 ERROR 14040 --- [restartedMain] o.s.b.c.l.LoggingApplicationListener     : Cannot set level 'info;' for 'org.springframework.core.codec'
+2019-05-22 16:34:05.484 ERROR 14040 --- [restartedMain] o.s.b.c.l.LoggingApplicationListener     : Cannot set level 'info;' for 'org.springframework.http'
+2019-05-22 16:34:05.484 ERROR 14040 --- [restartedMain] o.s.b.c.l.LoggingApplicationListener     : Cannot set level 'info;' for 'org.springframework.web'
+2019-05-22 16:34:05.484 ERROR 14040 --- [restartedMain] o.s.b.c.l.LoggingApplicationListener     : Cannot set level 'info;' for 'org.springframework.boot.actuate.endpoint.web'
+2019-05-22 16:34:05.484 ERROR 14040 --- [restartedMain] o.s.b.c.l.LoggingApplicationListener     : Cannot set level 'info;' for 'org.springframework.boot.web.servlet.ServletContextInitializerBeans'
+2019-05-22 16:34:06.149 DEBUG 14040 --- [background-preinit] .h.v.m.ResourceBundleMessageInterpolator : Loaded expression factory via original TCCL
+2019-05-22 16:34:06.537 DEBUG 14040 --- [background-preinit] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2019-05-22 16:34:06.538 DEBUG 14040 --- [background-preinit] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
+2019-05-22 16:34:06.538 DEBUG 14040 --- [background-preinit] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2019-05-22 16:34:06.539 DEBUG 14040 --- [background-preinit] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2019-05-22 16:34:06.539 DEBUG 14040 --- [background-preinit] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2019-05-22 16:34:07.442  INFO 14040 --- [restartedMain] M.H.HomeWork20MvcApplication             : Starting HomeWork20MvcApplication on Sergey-PC with PID 14040 (C:\Users\Sergey\IdeaProjects\HomeWork20MVC\HomeWork20MVC\target\classes started by Sergey in C:\Users\Sergey\IdeaProjects\HomeWork20MVC)
+2019-05-22 16:34:07.444  INFO 14040 --- [restartedMain] M.H.HomeWork20MvcApplication             : No active profile set, falling back to default profiles: default
+2019-05-22 16:34:08.362  INFO 14040 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-05-22 16:34:14.723  INFO 14040 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-05-22 16:34:14.986  INFO 14040 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 227ms. Found 1 repository interfaces.
+2019-05-22 16:34:15.853  INFO 14040 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$25990a9a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-05-22 16:34:16.610  INFO 14040 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-05-22 16:34:16.725  INFO 14040 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-05-22 16:34:16.725  INFO 14040 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-05-22 16:34:17.022  INFO 14040 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-05-22 16:34:17.023  INFO 14040 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 8660 ms
+2019-05-22 16:34:17.596  INFO 14040 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-05-22 16:34:20.156  INFO 14040 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-05-22 16:34:20.637 DEBUG 14040 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : PersistenceUnitInfo [
+	name: default
+	persistence provider classname: null
+	classloader: org.springframework.boot.devtools.restart.classloader.RestartClassLoader@21686f30
+	excludeUnlistedClasses: true
+	JTA datasource: null
+	Non JTA datasource: HikariDataSource (HikariPool-1)
+	Transaction type: RESOURCE_LOCAL
+	PU root URL: file:/C:/Users/Sergey/IdeaProjects/HomeWork20MVC/HomeWork20MVC/target/classes/
+	Shared Cache Mode: UNSPECIFIED
+	Validation Mode: AUTO
+	Jar files URLs []
+	Managed classes names [
+		MateAcad.HomeWork20MVC.entities.BaseEntity
+		MateAcad.HomeWork20MVC.entities.CreatableEntity
+		MateAcad.HomeWork20MVC.entities.Programmer]
+	Mapping files names []
+	Properties []
+2019-05-22 16:34:20.754 DEBUG 14040 --- [restartedMain] o.h.i.internal.IntegratorServiceImpl     : Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+2019-05-22 16:34:20.778 DEBUG 14040 --- [restartedMain] o.h.i.internal.IntegratorServiceImpl     : Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+2019-05-22 16:34:20.793 DEBUG 14040 --- [restartedMain] o.h.i.internal.IntegratorServiceImpl     : Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+2019-05-22 16:34:21.646  INFO 14040 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2019-05-22 16:34:21.681  INFO 14040 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-05-22 16:34:22.148 DEBUG 14040 --- [restartedMain] o.hibernate.service.spi.ServiceBinding   : Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+2019-05-22 16:34:22.216 DEBUG 14040 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2019-05-22 16:34:22.227 DEBUG 14040 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+2019-05-22 16:34:22.316  INFO 14040 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-05-22 16:34:22.409 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BooleanType@399885ba
+2019-05-22 16:34:22.410 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BooleanType@399885ba
+2019-05-22 16:34:22.410 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@399885ba
+2019-05-22 16:34:22.412 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@37df14c9
+2019-05-22 16:34:22.413 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration true_false -> org.hibernate.type.TrueFalseType@71f7a134
+2019-05-22 16:34:22.414 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration yes_no -> org.hibernate.type.YesNoType@5d86d661
+2019-05-22 16:34:22.417 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.ByteType@30f4a879
+2019-05-22 16:34:22.417 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.ByteType@30f4a879
+2019-05-22 16:34:22.417 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@30f4a879
+2019-05-22 16:34:22.419 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration character -> org.hibernate.type.CharacterType@a425775
+2019-05-22 16:34:22.419 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration char -> org.hibernate.type.CharacterType@a425775
+2019-05-22 16:34:22.420 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@a425775
+2019-05-22 16:34:22.422 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.ShortType@d10b86f
+2019-05-22 16:34:22.422 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.ShortType@d10b86f
+2019-05-22 16:34:22.423 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Short -> org.hibernate.type.ShortType@d10b86f
+2019-05-22 16:34:22.424 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration integer -> org.hibernate.type.IntegerType@156b7a6d
+2019-05-22 16:34:22.425 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration int -> org.hibernate.type.IntegerType@156b7a6d
+2019-05-22 16:34:22.425 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@156b7a6d
+2019-05-22 16:34:22.426 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.LongType@39d6ee4a
+2019-05-22 16:34:22.427 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.LongType@39d6ee4a
+2019-05-22 16:34:22.427 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Long -> org.hibernate.type.LongType@39d6ee4a
+2019-05-22 16:34:22.428 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.FloatType@67afd5e9
+2019-05-22 16:34:22.428 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.FloatType@67afd5e9
+2019-05-22 16:34:22.428 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Float -> org.hibernate.type.FloatType@67afd5e9
+2019-05-22 16:34:22.429 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.DoubleType@1886fbf
+2019-05-22 16:34:22.429 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.DoubleType@1886fbf
+2019-05-22 16:34:22.429 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@1886fbf
+2019-05-22 16:34:22.430 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@6747124
+2019-05-22 16:34:22.431 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@6747124
+2019-05-22 16:34:22.432 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_integer -> org.hibernate.type.BigIntegerType@720621d6
+2019-05-22 16:34:22.433 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@720621d6
+2019-05-22 16:34:22.434 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration string -> org.hibernate.type.StringType@402e6f91
+2019-05-22 16:34:22.434 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.String -> org.hibernate.type.StringType@402e6f91
+2019-05-22 16:34:22.435 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration nstring -> org.hibernate.type.StringNVarcharType@29cefd70
+2019-05-22 16:34:22.435 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@6a90a467
+2019-05-22 16:34:22.436 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration url -> org.hibernate.type.UrlType@428d4e1b
+2019-05-22 16:34:22.436 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.net.URL -> org.hibernate.type.UrlType@428d4e1b
+2019-05-22 16:34:22.437 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Duration -> org.hibernate.type.DurationType@6352a8b9
+2019-05-22 16:34:22.438 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Duration -> org.hibernate.type.DurationType@6352a8b9
+2019-05-22 16:34:22.439 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Instant -> org.hibernate.type.InstantType@7b103a72
+2019-05-22 16:34:22.439 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Instant -> org.hibernate.type.InstantType@7b103a72
+2019-05-22 16:34:22.440 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@71aecde4
+2019-05-22 16:34:22.440 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@71aecde4
+2019-05-22 16:34:22.441 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDate -> org.hibernate.type.LocalDateType@78072d18
+2019-05-22 16:34:22.442 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@78072d18
+2019-05-22 16:34:22.443 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@1d107700
+2019-05-22 16:34:22.443 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@1d107700
+2019-05-22 16:34:22.445 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@39eec4bc
+2019-05-22 16:34:22.445 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@39eec4bc
+2019-05-22 16:34:22.447 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@200194a3
+2019-05-22 16:34:22.447 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@200194a3
+2019-05-22 16:34:22.449 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@69126c33
+2019-05-22 16:34:22.450 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@69126c33
+2019-05-22 16:34:22.451 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration date -> org.hibernate.type.DateType@7d6ab5f9
+2019-05-22 16:34:22.452 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Date -> org.hibernate.type.DateType@7d6ab5f9
+2019-05-22 16:34:22.453 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration time -> org.hibernate.type.TimeType@3c825f3e
+2019-05-22 16:34:22.454 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Time -> org.hibernate.type.TimeType@3c825f3e
+2019-05-22 16:34:22.455 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration timestamp -> org.hibernate.type.TimestampType@6e175270
+2019-05-22 16:34:22.456 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@6e175270
+2019-05-22 16:34:22.456 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Date -> org.hibernate.type.TimestampType@6e175270
+2019-05-22 16:34:22.458 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@f73589c
+2019-05-22 16:34:22.459 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar -> org.hibernate.type.CalendarType@36afb5b4
+2019-05-22 16:34:22.460 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@36afb5b4
+2019-05-22 16:34:22.460 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@36afb5b4
+2019-05-22 16:34:22.461 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@b6d639d
+2019-05-22 16:34:22.463 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration locale -> org.hibernate.type.LocaleType@59d523dd
+2019-05-22 16:34:22.464 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@59d523dd
+2019-05-22 16:34:22.465 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration currency -> org.hibernate.type.CurrencyType@6c8e4502
+2019-05-22 16:34:22.465 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@6c8e4502
+2019-05-22 16:34:22.466 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration timezone -> org.hibernate.type.TimeZoneType@8fe7012
+2019-05-22 16:34:22.467 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@8fe7012
+2019-05-22 16:34:22.468 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration class -> org.hibernate.type.ClassType@252515c0
+2019-05-22 16:34:22.468 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Class -> org.hibernate.type.ClassType@252515c0
+2019-05-22 16:34:22.469 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@5cc2de15
+2019-05-22 16:34:22.469 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@5cc2de15
+2019-05-22 16:34:22.470 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@70041229
+2019-05-22 16:34:22.472 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration binary -> org.hibernate.type.BinaryType@7a754037
+2019-05-22 16:34:22.472 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte[] -> org.hibernate.type.BinaryType@7a754037
+2019-05-22 16:34:22.472 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [B -> org.hibernate.type.BinaryType@7a754037
+2019-05-22 16:34:22.473 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@73f5cbc6
+2019-05-22 16:34:22.473 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@73f5cbc6
+2019-05-22 16:34:22.473 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@73f5cbc6
+2019-05-22 16:34:22.475 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration row_version -> org.hibernate.type.RowVersionType@2d38dd6d
+2019-05-22 16:34:22.475 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration image -> org.hibernate.type.ImageType@2c651c97
+2019-05-22 16:34:22.476 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration characters -> org.hibernate.type.CharArrayType@7f900477
+2019-05-22 16:34:22.476 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration char[] -> org.hibernate.type.CharArrayType@7f900477
+2019-05-22 16:34:22.476 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [C -> org.hibernate.type.CharArrayType@7f900477
+2019-05-22 16:34:22.477 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@97c892c
+2019-05-22 16:34:22.478 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@97c892c
+2019-05-22 16:34:22.478 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@97c892c
+2019-05-22 16:34:22.478 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration text -> org.hibernate.type.TextType@4791ab2b
+2019-05-22 16:34:22.479 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ntext -> org.hibernate.type.NTextType@462f278b
+2019-05-22 16:34:22.480 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration blob -> org.hibernate.type.BlobType@3b8ac899
+2019-05-22 16:34:22.481 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@3b8ac899
+2019-05-22 16:34:22.482 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@1e8c79e3
+2019-05-22 16:34:22.484 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration clob -> org.hibernate.type.ClobType@3918067d
+2019-05-22 16:34:22.484 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@3918067d
+2019-05-22 16:34:22.486 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration nclob -> org.hibernate.type.NClobType@d220017
+2019-05-22 16:34:22.486 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@d220017
+2019-05-22 16:34:22.486 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@746669a7
+2019-05-22 16:34:22.486 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@68d0cee5
+2019-05-22 16:34:22.488 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration serializable -> org.hibernate.type.SerializableType@57517b35
+2019-05-22 16:34:22.491 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration object -> org.hibernate.type.ObjectType@1c4f7fcb
+2019-05-22 16:34:22.491 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@1c4f7fcb
+2019-05-22 16:34:22.491 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@1869e2a2
+2019-05-22 16:34:22.491 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@108cbd1c
+2019-05-22 16:34:22.492 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@408d1a0f
+2019-05-22 16:34:22.492 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@446bd314
+2019-05-22 16:34:22.492 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@134055c9
+2019-05-22 16:34:22.492 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@66d16ee0
+2019-05-22 16:34:22.493 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@4e244d57
+2019-05-22 16:34:22.493 DEBUG 14040 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@54cdc4f4
+2019-05-22 16:34:22.538 DEBUG 14040 --- [restartedMain] o.h.boot.internal.BootstrapContextImpl   : Injecting JPA temp ClassLoader [org.springframework.instrument.classloading.SimpleThrowawayClassLoader@54d17d03] into BootstrapContext; was [null]
+2019-05-22 16:34:22.538 DEBUG 14040 --- [restartedMain] o.h.boot.internal.ClassLoaderAccessImpl  : ClassLoaderAccessImpl#injectTempClassLoader(org.springframework.instrument.classloading.SimpleThrowawayClassLoader@54d17d03) [was null]
+2019-05-22 16:34:22.552 DEBUG 14040 --- [restartedMain] o.h.boot.internal.BootstrapContextImpl   : Injecting ScanEnvironment [org.hibernate.jpa.boot.internal.StandardJpaScanEnvironmentImpl@58866e2b] into BootstrapContext; was [null]
+2019-05-22 16:34:22.552 DEBUG 14040 --- [restartedMain] o.h.boot.internal.BootstrapContextImpl   : Injecting ScanOptions [org.hibernate.boot.archive.scan.internal.StandardScanOptions@2bf6eb76] into BootstrapContext; was [org.hibernate.boot.archive.scan.internal.StandardScanOptions@234a6d27]
+2019-05-22 16:34:22.665 DEBUG 14040 --- [restartedMain] o.h.boot.internal.BootstrapContextImpl   : Injecting JPA temp ClassLoader [null] into BootstrapContext; was [org.springframework.instrument.classloading.SimpleThrowawayClassLoader@54d17d03]
+2019-05-22 16:34:22.665 DEBUG 14040 --- [restartedMain] o.h.boot.internal.ClassLoaderAccessImpl  : ClassLoaderAccessImpl#injectTempClassLoader(null) [was org.springframework.instrument.classloading.SimpleThrowawayClassLoader@54d17d03]
+2019-05-22 16:34:22.732 DEBUG 14040 --- [restartedMain] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+2019-05-22 16:34:22.733 DEBUG 14040 --- [restartedMain] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+2019-05-22 16:34:22.734 DEBUG 14040 --- [restartedMain] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+2019-05-22 16:34:22.734 DEBUG 14040 --- [restartedMain] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+2019-05-22 16:34:22.735 DEBUG 14040 --- [restartedMain] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+2019-05-22 16:34:22.737 DEBUG 14040 --- [restartedMain] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+2019-05-22 16:34:22.737 DEBUG 14040 --- [restartedMain] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+2019-05-22 16:34:22.739 DEBUG 14040 --- [restartedMain] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2019-05-22 16:34:22.741 DEBUG 14040 --- [restartedMain] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+2019-05-22 16:34:22.741 DEBUG 14040 --- [restartedMain] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+2019-05-22 16:34:22.742 DEBUG 14040 --- [restartedMain] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+2019-05-22 16:34:22.743 DEBUG 14040 --- [restartedMain] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+2019-05-22 16:34:22.744 DEBUG 14040 --- [restartedMain] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2019-05-22 16:34:22.746 DEBUG 14040 --- [restartedMain] .i.f.i.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+2019-05-22 16:34:22.784 DEBUG 14040 --- [restartedMain] o.h.e.j.e.i.JdbcEnvironmentInitiator     : Database ->
+       name : MySQL
+    version : 8.0.12
+      major : 8
+      minor : 0
+2019-05-22 16:34:22.785 DEBUG 14040 --- [restartedMain] o.h.e.j.e.i.JdbcEnvironmentInitiator     : Driver ->
+       name : MySQL Connector/J
+    version : mysql-connector-java-8.0.13 (Revision: 66459e9d39c8fd09767992bc592acd2053279be6)
+      major : 8
+      minor : 0
+2019-05-22 16:34:22.785 DEBUG 14040 --- [restartedMain] o.h.e.j.e.i.JdbcEnvironmentInitiator     : JDBC version : 4.2
+2019-05-22 16:34:22.820  INFO 14040 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-05-22 16:34:23.732 DEBUG 14040 --- [restartedMain] o.h.e.j.env.spi.IdentifierHelperBuilder  : JDBC driver metadata reported database stores quoted identifiers in more than one case
+2019-05-22 16:34:23.733 DEBUG 14040 --- [restartedMain] o.h.e.j.env.spi.IdentifierHelperBuilder  : IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [LOWER]; that will likely lead to problems in schema update and validation if using quoted identifiers
+2019-05-22 16:34:23.759 DEBUG 14040 --- [restartedMain] o.h.boot.model.relational.Namespace      : Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+2019-05-22 16:34:23.762 DEBUG 14040 --- [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@632182a8] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@7f36fafa]
+2019-05-22 16:34:23.827 DEBUG 14040 --- [restartedMain] org.hibernate.cfg.AnnotationBinder       : Binding entity from annotated class: MateAcad.HomeWork20MVC.entities.Programmer
+2019-05-22 16:34:23.883 DEBUG 14040 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2019-05-22 16:34:23.888 DEBUG 14040 --- [restartedMain] o.h.cfg.annotations.EntityBinder         : Import with entity name Programmer
+2019-05-22 16:34:23.892 DEBUG 14040 --- [restartedMain] o.h.cfg.annotations.EntityBinder         : Bind entity MateAcad.HomeWork20MVC.entities.Programmer on table programmers
+2019-05-22 16:34:23.957 DEBUG 14040 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(programmers), mappingColumn=id, insertable=true, updatable=true, unique=false}
+2019-05-22 16:34:23.960 DEBUG 14040 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property id with lazy=false
+2019-05-22 16:34:23.962 DEBUG 14040 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [MateAcad.HomeWork20MVC.entities.Programmer:id]
+2019-05-22 16:34:23.965 DEBUG 14040 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for id
+2019-05-22 16:34:23.969 DEBUG 14040 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property id
+2019-05-22 16:34:23.974 DEBUG 14040 --- [restartedMain] org.hibernate.cfg.BinderHelper           : #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, identity, , ...)
+2019-05-22 16:34:23.975 DEBUG 14040 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(programmers), mappingColumn=created_date, insertable=true, updatable=true, unique=false}
+2019-05-22 16:34:23.975 DEBUG 14040 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property createdDate with lazy=false
+2019-05-22 16:34:23.975 DEBUG 14040 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [MateAcad.HomeWork20MVC.entities.Programmer:createdDate]
+2019-05-22 16:34:23.976 DEBUG 14040 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for createdDate
+2019-05-22 16:34:23.976 DEBUG 14040 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property createdDate
+2019-05-22 16:34:23.977 DEBUG 14040 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(programmers), mappingColumn=access_rights, insertable=true, updatable=true, unique=false}
+2019-05-22 16:34:23.977 DEBUG 14040 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property accessRights with lazy=false
+2019-05-22 16:34:23.977 DEBUG 14040 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [MateAcad.HomeWork20MVC.entities.Programmer:accessRights]
+2019-05-22 16:34:23.999 DEBUG 14040 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for accessRights
+2019-05-22 16:34:23.999 DEBUG 14040 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property accessRights
+2019-05-22 16:34:23.999 DEBUG 14040 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(programmers), mappingColumn=birthday, insertable=true, updatable=true, unique=false}
+2019-05-22 16:34:24.000 DEBUG 14040 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property birthDay with lazy=false
+2019-05-22 16:34:24.000 DEBUG 14040 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [MateAcad.HomeWork20MVC.entities.Programmer:birthDay]
+2019-05-22 16:34:24.000 DEBUG 14040 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for birthDay
+2019-05-22 16:34:24.000 DEBUG 14040 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property birthDay
+2019-05-22 16:34:24.000 DEBUG 14040 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(programmers), mappingColumn=email, insertable=true, updatable=true, unique=false}
+2019-05-22 16:34:24.000 DEBUG 14040 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property email with lazy=false
+2019-05-22 16:34:24.000 DEBUG 14040 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [MateAcad.HomeWork20MVC.entities.Programmer:email]
+2019-05-22 16:34:24.000 DEBUG 14040 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for email
+2019-05-22 16:34:24.001 DEBUG 14040 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property email
+2019-05-22 16:34:24.002 DEBUG 14040 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(programmers), mappingColumn=name, insertable=true, updatable=true, unique=false}
+2019-05-22 16:34:24.002 DEBUG 14040 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property name with lazy=false
+2019-05-22 16:34:24.002 DEBUG 14040 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [MateAcad.HomeWork20MVC.entities.Programmer:name]
+2019-05-22 16:34:24.002 DEBUG 14040 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for name
+2019-05-22 16:34:24.002 DEBUG 14040 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property name
+2019-05-22 16:34:24.002 DEBUG 14040 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(programmers), mappingColumn=password, insertable=true, updatable=true, unique=false}
+2019-05-22 16:34:24.002 DEBUG 14040 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property password with lazy=false
+2019-05-22 16:34:24.003 DEBUG 14040 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [MateAcad.HomeWork20MVC.entities.Programmer:password]
+2019-05-22 16:34:24.003 DEBUG 14040 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for password
+2019-05-22 16:34:24.003 DEBUG 14040 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property password
+2019-05-22 16:34:24.003 DEBUG 14040 --- [restartedMain] org.hibernate.cfg.Ejb3Column             : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(programmers), mappingColumn=surname, insertable=true, updatable=true, unique=false}
+2019-05-22 16:34:24.003 DEBUG 14040 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : MetadataSourceProcessor property surName with lazy=false
+2019-05-22 16:34:24.003 DEBUG 14040 --- [restartedMain] o.hibernate.cfg.AbstractPropertyHolder   : Attempting to locate auto-apply AttributeConverter for property [MateAcad.HomeWork20MVC.entities.Programmer:surName]
+2019-05-22 16:34:24.003 DEBUG 14040 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : building SimpleValue for surName
+2019-05-22 16:34:24.003 DEBUG 14040 --- [restartedMain] o.h.cfg.annotations.PropertyBinder       : Building property surName
+2019-05-22 16:34:24.006 DEBUG 14040 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for id
+2019-05-22 16:34:24.006 DEBUG 14040 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for createdDate
+2019-05-22 16:34:24.006 DEBUG 14040 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for accessRights
+2019-05-22 16:34:24.007 DEBUG 14040 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for birthDay
+2019-05-22 16:34:24.007 DEBUG 14040 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for email
+2019-05-22 16:34:24.008 DEBUG 14040 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for name
+2019-05-22 16:34:24.008 DEBUG 14040 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for password
+2019-05-22 16:34:24.008 DEBUG 14040 --- [restartedMain] o.h.cfg.annotations.SimpleValueBinder    : Starting fillSimpleValue for surName
+2019-05-22 16:34:24.009 DEBUG 14040 --- [restartedMain] org.hibernate.mapping.PrimaryKey         : Forcing column [id] to be non-null as it is part of the primary key for table [programmers]
+2019-05-22 16:34:24.094 DEBUG 14040 --- [restartedMain] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum MateAcad.HomeWork20MVC.enums.AccessRights
+2019-05-22 16:34:24.111 DEBUG 14040 --- [restartedMain] o.hibernate.internal.SessionFactoryImpl  : Building session factory
+2019-05-22 16:34:24.112 DEBUG 14040 --- [restartedMain] org.hibernate.cfg.Settings               : SessionFactory name : null
+2019-05-22 16:34:24.113 DEBUG 14040 --- [restartedMain] org.hibernate.cfg.Settings               : Automatic flush during beforeCompletion(): enabled
+2019-05-22 16:34:24.113 DEBUG 14040 --- [restartedMain] org.hibernate.cfg.Settings               : Automatic session close at end of transaction: disabled
+2019-05-22 16:34:24.113 DEBUG 14040 --- [restartedMain] org.hibernate.cfg.Settings               : Statistics: disabled
+2019-05-22 16:34:24.113 DEBUG 14040 --- [restartedMain] org.hibernate.cfg.Settings               : Deleted entity synthetic identifier rollback: disabled
+2019-05-22 16:34:24.113 DEBUG 14040 --- [restartedMain] org.hibernate.cfg.Settings               : Default entity-mode: pojo
+2019-05-22 16:34:24.113 DEBUG 14040 --- [restartedMain] org.hibernate.cfg.Settings               : Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2019-05-22 16:34:24.113 DEBUG 14040 --- [restartedMain] org.hibernate.cfg.Settings               : Allow initialization of lazy state outside session : disabled
+2019-05-22 16:34:24.113 DEBUG 14040 --- [restartedMain] org.hibernate.cfg.Settings               : Using BatchFetchStyle : LEGACY
+2019-05-22 16:34:24.113 DEBUG 14040 --- [restartedMain] org.hibernate.cfg.Settings               : Default batch fetch size: -1
+2019-05-22 16:34:24.113 DEBUG 14040 --- [restartedMain] org.hibernate.cfg.Settings               : Maximum outer join fetch depth: 2
+2019-05-22 16:34:24.113 DEBUG 14040 --- [restartedMain] org.hibernate.cfg.Settings               : Default null ordering: NONE
+2019-05-22 16:34:24.113 DEBUG 14040 --- [restartedMain] org.hibernate.cfg.Settings               : Order SQL updates by primary key: disabled
+2019-05-22 16:34:24.113 DEBUG 14040 --- [restartedMain] org.hibernate.cfg.Settings               : Order SQL inserts for batching: disabled
+2019-05-22 16:34:24.114 DEBUG 14040 --- [restartedMain] org.hibernate.cfg.Settings               : multi-tenancy strategy : NONE
+2019-05-22 16:34:24.114 DEBUG 14040 --- [restartedMain] org.hibernate.cfg.Settings               : JTA Track by Thread: enabled
+2019-05-22 16:34:24.114 DEBUG 14040 --- [restartedMain] org.hibernate.cfg.Settings               : Query language substitutions: {}
+2019-05-22 16:34:24.114 DEBUG 14040 --- [restartedMain] org.hibernate.cfg.Settings               : Named query checking : enabled
+2019-05-22 16:34:24.114 DEBUG 14040 --- [restartedMain] org.hibernate.cfg.Settings               : Second-level cache: disabled
+2019-05-22 16:34:24.114 DEBUG 14040 --- [restartedMain] org.hibernate.cfg.Settings               : Second-level query cache: disabled
+2019-05-22 16:34:24.114 DEBUG 14040 --- [restartedMain] org.hibernate.cfg.Settings               : Second-level query cache factory: null
+2019-05-22 16:34:24.114 DEBUG 14040 --- [restartedMain] org.hibernate.cfg.Settings               : Second-level cache region prefix: null
+2019-05-22 16:34:24.114 DEBUG 14040 --- [restartedMain] org.hibernate.cfg.Settings               : Optimize second-level cache for minimal puts: disabled
+2019-05-22 16:34:24.114 DEBUG 14040 --- [restartedMain] org.hibernate.cfg.Settings               : Structured second-level cache entries: disabled
+2019-05-22 16:34:24.114 DEBUG 14040 --- [restartedMain] org.hibernate.cfg.Settings               : Second-level cache direct-reference entries: disabled
+2019-05-22 16:34:24.115 DEBUG 14040 --- [restartedMain] org.hibernate.cfg.Settings               : Automatic eviction of collection cache: disabled
+2019-05-22 16:34:24.115 DEBUG 14040 --- [restartedMain] org.hibernate.cfg.Settings               : JDBC batch size: 15
+2019-05-22 16:34:24.115 DEBUG 14040 --- [restartedMain] org.hibernate.cfg.Settings               : JDBC batch updates for versioned data: enabled
+2019-05-22 16:34:24.115 DEBUG 14040 --- [restartedMain] org.hibernate.cfg.Settings               : Scrollable result sets: enabled
+2019-05-22 16:34:24.116 DEBUG 14040 --- [restartedMain] org.hibernate.cfg.Settings               : Wrap result sets: disabled
+2019-05-22 16:34:24.116 DEBUG 14040 --- [restartedMain] org.hibernate.cfg.Settings               : JDBC3 getGeneratedKeys(): enabled
+2019-05-22 16:34:24.116 DEBUG 14040 --- [restartedMain] org.hibernate.cfg.Settings               : JDBC result set fetch size: null
+2019-05-22 16:34:24.116 DEBUG 14040 --- [restartedMain] org.hibernate.cfg.Settings               : Connection release mode: ON_CLOSE
+2019-05-22 16:34:24.116 DEBUG 14040 --- [restartedMain] org.hibernate.cfg.Settings               : Generate SQL with comments: disabled
+2019-05-22 16:34:24.116 DEBUG 14040 --- [restartedMain] org.hibernate.cfg.Settings               : JPA compliance - query : 
+2019-05-22 16:34:24.116 DEBUG 14040 --- [restartedMain] org.hibernate.cfg.Settings               : JPA compliance - closed-handling : 
+2019-05-22 16:34:24.116 DEBUG 14040 --- [restartedMain] org.hibernate.cfg.Settings               : JPA compliance - lists : 
+2019-05-22 16:34:24.116 DEBUG 14040 --- [restartedMain] org.hibernate.cfg.Settings               : JPA compliance - transactions : 
+2019-05-22 16:34:24.201 DEBUG 14040 --- [restartedMain] o.h.j.e.i.CallbackBuilderLegacyImpl      : Adding preUpdate as PreUpdate callback for entity MateAcad.HomeWork20MVC.entities.Programmer
+2019-05-22 16:34:24.202 DEBUG 14040 --- [restartedMain] o.h.j.e.i.CallbackBuilderLegacyImpl      : Adding prePersist as PrePersist callback for entity MateAcad.HomeWork20MVC.entities.Programmer
+2019-05-22 16:34:24.203 DEBUG 14040 --- [restartedMain] o.h.j.e.i.CallbackBuilderLegacyImpl      : Adding prePersist as PrePersist callback for entity MateAcad.HomeWork20MVC.entities.Programmer
+2019-05-22 16:34:24.203 DEBUG 14040 --- [restartedMain] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum MateAcad.HomeWork20MVC.enums.AccessRights
+2019-05-22 16:34:24.245 DEBUG 14040 --- [restartedMain] o.hibernate.internal.SessionFactoryImpl  : Session factory constructed with filter configurations : {}
+2019-05-22 16:34:24.245 DEBUG 14040 --- [restartedMain] o.hibernate.internal.SessionFactoryImpl  : Instantiating session factory with properties: {sun.desktop=windows, awt.toolkit=sun.awt.windows.WToolkit, hibernate.id.new_generator_mappings=true, java.specification.version=9, file.encoding.pkg=sun.io, sun.cpu.isalist=amd64, hibernate.resource.beans.container=org.springframework.orm.hibernate5.SpringBeanContainer@63726e84, hibernate.connection.handling_mode=DELAYED_ACQUISITION_AND_HOLD, sun.jnu.encoding=Cp1251, hibernate.dialect=org.hibernate.dialect.MySQL5Dialect, hibernate.implicit_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy, java.class.path=C:\Users\Sergey\IdeaProjects\HomeWork20MVC\HomeWork20MVC\target\classes;C:\Users\Sergey\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\2.1.5.RELEASE\spring-boot-starter-data-jpa-2.1.5.RELEASE.jar;C:\Users\Sergey\.m2\repository\org\springframework\boot\spring-boot-starter-aop\2.1.5.RELEASE\spring-boot-starter-aop-2.1.5.RELEASE.jar;C:\Users\Sergey\.m2\repository\org\aspectj\aspectjweaver\1.9.4\aspectjweaver-1.9.4.jar;C:\Users\Sergey\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\2.1.5.RELEASE\spring-boot-starter-jdbc-2.1.5.RELEASE.jar;C:\Users\Sergey\.m2\repository\com\zaxxer\HikariCP\3.2.0\HikariCP-3.2.0.jar;C:\Users\Sergey\.m2\repository\org\springframework\spring-jdbc\5.1.7.RELEASE\spring-jdbc-5.1.7.RELEASE.jar;C:\Users\Sergey\.m2\repository\javax\transaction\javax.transaction-api\1.3\javax.transaction-api-1.3.jar;C:\Users\Sergey\.m2\repository\javax\xml\bind\jaxb-api\2.3.1\jaxb-api-2.3.1.jar;C:\Users\Sergey\.m2\repository\javax\activation\javax.activation-api\1.2.0\javax.activation-api-1.2.0.jar;C:\Users\Sergey\.m2\repository\org\hibernate\hibernate-core\5.3.10.Final\hibernate-core-5.3.10.Final.jar;C:\Users\Sergey\.m2\repository\org\jboss\logging\jboss-logging\3.3.2.Final\jboss-logging-3.3.2.Final.jar;C:\Users\Sergey\.m2\repository\javax\persistence\javax.persistence-api\2.2\javax.persistence-api-2.2.jar;C:\Users\Sergey\.m2\repository\org\javassist\javassist\3.23.2-GA\javassist-3.23.2-GA.jar;C:\Users\Sergey\.m2\repository\net\bytebuddy\byte-buddy\1.9.12\byte-buddy-1.9.12.jar;C:\Users\Sergey\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar;C:\Users\Sergey\.m2\repository\org\jboss\jandex\2.0.5.Final\jandex-2.0.5.Final.jar;C:\Users\Sergey\.m2\repository\com\fasterxml\classmate\1.4.0\classmate-1.4.0.jar;C:\Users\Sergey\.m2\repository\org\dom4j\dom4j\2.1.1\dom4j-2.1.1.jar;C:\Users\Sergey\.m2\repository\org\hibernate\common\hibernate-commons-annotations\5.0.4.Final\hibernate-commons-annotations-5.0.4.Final.jar;C:\Users\Sergey\.m2\repository\org\springframework\data\spring-data-jpa\2.1.8.RELEASE\spring-data-jpa-2.1.8.RELEASE.jar;C:\Users\Sergey\.m2\repository\org\springframework\data\spring-data-commons\2.1.8.RELEASE\spring-data-commons-2.1.8.RELEASE.jar;C:\Users\Sergey\.m2\repository\org\springframework\spring-orm\5.1.7.RELEASE\spring-orm-5.1.7.RELEASE.jar;C:\Users\Sergey\.m2\repository\org\springframework\spring-context\5.1.7.RELEASE\spring-context-5.1.7.RELEASE.jar;C:\Users\Sergey\.m2\repository\org\springframework\spring-tx\5.1.7.RELEASE\spring-tx-5.1.7.RELEASE.jar;C:\Users\Sergey\.m2\repository\org\springframework\spring-beans\5.1.7.RELEASE\spring-beans-5.1.7.RELEASE.jar;C:\Users\Sergey\.m2\repository\org\slf4j\slf4j-api\1.7.26\slf4j-api-1.7.26.jar;C:\Users\Sergey\.m2\repository\org\springframework\spring-aspects\5.1.7.RELEASE\spring-aspects-5.1.7.RELEASE.jar;C:\Users\Sergey\.m2\repository\org\springframework\boot\spring-boot-starter-thymeleaf\2.1.5.RELEASE\spring-boot-starter-thymeleaf-2.1.5.RELEASE.jar;C:\Users\Sergey\.m2\repository\org\springframework\boot\spring-boot-starter\2.1.5.RELEASE\spring-boot-starter-2.1.5.RELEASE.jar;C:\Users\Sergey\.m2\repository\org\springframework\boot\spring-boot-starter-logging\2.1.5.RELEASE\spring-boot-starter-logging-2.1.5.RELEASE.jar;C:\Users\Sergey\.m2\repository\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;C:\Users\Sergey\.m2\repository\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;C:\Users\Sergey\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.11.2\log4j-to-slf4j-2.11.2.jar;C:\Users\Sergey\.m2\repository\org\apache\logging\log4j\log4j-api\2.11.2\log4j-api-2.11.2.jar;C:\Users\Sergey\.m2\repository\org\slf4j\jul-to-slf4j\1.7.26\jul-to-slf4j-1.7.26.jar;C:\Users\Sergey\.m2\repository\javax\annotation\javax.annotation-api\1.3.2\javax.annotation-api-1.3.2.jar;C:\Users\Sergey\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23.jar;C:\Users\Sergey\.m2\repository\org\thymeleaf\thymeleaf-spring5\3.0.11.RELEASE\thymeleaf-spring5-3.0.11.RELEASE.jar;C:\Users\Sergey\.m2\repository\org\thymeleaf\thymeleaf\3.0.11.RELEASE\thymeleaf-3.0.11.RELEASE.jar;C:\Users\Sergey\.m2\repository\org\attoparser\attoparser\2.0.5.RELEASE\attoparser-2.0.5.RELEASE.jar;C:\Users\Sergey\.m2\repository\org\unbescape\unbescape\1.1.6.RELEASE\unbescape-1.1.6.RELEASE.jar;C:\Users\Sergey\.m2\repository\org\thymeleaf\extras\thymeleaf-extras-java8time\3.0.4.RELEASE\thymeleaf-extras-java8time-3.0.4.RELEASE.jar;C:\Users\Sergey\.m2\repository\org\springframework\boot\spring-boot-starter-web\2.1.5.RELEASE\spring-boot-starter-web-2.1.5.RELEASE.jar;C:\Users\Sergey\.m2\repository\org\springframework\boot\spring-boot-starter-json\2.1.5.RELEASE\spring-boot-starter-json-2.1.5.RELEASE.jar;C:\Users\Sergey\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.9.8\jackson-databind-2.9.8.jar;C:\Users\Sergey\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.9.0\jackson-annotations-2.9.0.jar;C:\Users\Sergey\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.9.8\jackson-core-2.9.8.jar;C:\Users\Sergey\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.9.8\jackson-datatype-jdk8-2.9.8.jar;C:\Users\Sergey\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.9.8\jackson-datatype-jsr310-2.9.8.jar;C:\Users\Sergey\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.9.8\jackson-module-parameter-names-2.9.8.jar;C:\Users\Sergey\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\2.1.5.RELEASE\spring-boot-starter-tomcat-2.1.5.RELEASE.jar;C:\Users\Sergey\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\9.0.19\tomcat-embed-core-9.0.19.jar;C:\Users\Sergey\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\9.0.19\tomcat-embed-el-9.0.19.jar;C:\Users\Sergey\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\9.0.19\tomcat-embed-websocket-9.0.19.jar;C:\Users\Sergey\.m2\repository\org\hibernate\validator\hibernate-validator\6.0.16.Final\hibernate-validator-6.0.16.Final.jar;C:\Users\Sergey\.m2\repository\javax\validation\validation-api\2.0.1.Final\validation-api-2.0.1.Final.jar;C:\Users\Sergey\.m2\repository\org\springframework\spring-web\5.1.7.RELEASE\spring-web-5.1.7.RELEASE.jar;C:\Users\Sergey\.m2\repository\org\springframework\spring-webmvc\5.1.7.RELEASE\spring-webmvc-5.1.7.RELEASE.jar;C:\Users\Sergey\.m2\repository\org\springframework\spring-expression\5.1.7.RELEASE\spring-expression-5.1.7.RELEASE.jar;C:\Users\Sergey\.m2\repository\org\springframework\boot\spring-boot-devtools\2.1.5.RELEASE\spring-boot-devtools-2.1.5.RELEASE.jar;C:\Users\Sergey\.m2\repository\org\springframework\boot\spring-boot\2.1.5.RELEASE\spring-boot-2.1.5.RELEASE.jar;C:\Users\Sergey\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\2.1.5.RELEASE\spring-boot-autoconfigure-2.1.5.RELEASE.jar;C:\Users\Sergey\.m2\repository\org\projectlombok\lombok\1.18.8\lombok-1.18.8.jar;C:\Users\Sergey\.m2\repository\mysql\mysql-connector-java\8.0.13\mysql-connector-java-8.0.13.jar;C:\Users\Sergey\.m2\repository\org\springframework\spring-core\5.1.7.RELEASE\spring-core-5.1.7.RELEASE.jar;C:\Users\Sergey\.m2\repository\org\springframework\spring-jcl\5.1.7.RELEASE\spring-jcl-5.1.7.RELEASE.jar;C:\Users\Sergey\.m2\repository\org\springframework\boot\spring-boot-starter-security\2.1.5.RELEASE\spring-boot-starter-security-2.1.5.RELEASE.jar;C:\Users\Sergey\.m2\repository\org\springframework\spring-aop\5.1.7.RELEASE\spring-aop-5.1.7.RELEASE.jar;C:\Users\Sergey\.m2\repository\org\springframework\security\spring-security-config\5.1.5.RELEASE\spring-security-config-5.1.5.RELEASE.jar;C:\Users\Sergey\.m2\repository\org\springframework\security\spring-security-core\5.1.5.RELEASE\spring-security-core-5.1.5.RELEASE.jar;C:\Users\Sergey\.m2\repository\org\springframework\security\spring-security-web\5.1.5.RELEASE\spring-security-web-5.1.5.RELEASE.jar;D:\Program Files\JetBrains\IntelliJ IDEA 2019.1.1\lib\idea_rt.jar, java.vm.vendor=Oracle Corporation, sun.arch.data.model=64, user.variant=, java.vendor.url=http://java.oracle.com/, catalina.useNaming=false, user.timezone=Europe/Helsinki, os.name=Windows 7, java.vm.specification.version=9, javax.persistence.validation.mode=AUTO, sun.java.launcher=SUN_STANDARD, user.country=RU, sun.boot.library.path=D:\Program Files\Java\jdk-9.0.1\bin, sun.java.command=MateAcad.HomeWork20MVC.HomeWork20MvcApplication, spring.application.admin.enabled=true, hibernate.transaction.jta.platform=org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform@49cd9eb, com.sun.management.jmxremote=, javax.persistence.sharedCache.mode=UNSPECIFIED, jdk.debug=release, spring.liveBeansView.mbeanDomain=, sun.cpu.endian=little, user.home=C:\Users\Sergey, user.language=ru, java.specification.vendor=Oracle Corporation, java.home=D:\Program Files\Java\jdk-9.0.1, file.separator=\, spring.output.ansi.enabled=always, java.vm.compressedOopsMode=32-bit, line.separator=
+, java.specification.name=Java Platform API Specification, java.vm.specification.vendor=Oracle Corporation, intellij.debug.agent=true, hibernate.transaction.coordinator_class=class org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorBuilderImpl, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, java.awt.headless=true, LOG_FILE_MAX_SIZE=1MB, hibernate.hbm2ddl.auto=update, user.script=, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, java.runtime.version=9.0.1+11, user.name=Sergey, spring.jmx.enabled=true, path.separator=;, os.version=6.1, java.runtime.name=Java(TM) SE Runtime Environment, file.encoding=UTF-8, hibernate.ejb.persistenceUnitName=default, spring.beaninfo.ignore=true, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, LOG_FILE=log.log, java.vendor.url.bug=http://bugreport.java.com/bugreport/, java.io.tmpdir=C:\Users\Sergey\AppData\Local\Temp\, com.zaxxer.hikari.pool_number=1, catalina.home=C:\Users\Sergey\AppData\Local\Temp\tomcat.11042043974748144584.8080, java.version=9.0.1, jboss.modules.system.pkgs=com.intellij.rt, hibernate.physical_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy, user.dir=C:\Users\Sergey\IdeaProjects\HomeWork20MVC, os.arch=amd64, java.vm.specification.name=Java Virtual Machine Specification, PID=14040, java.awt.printerjob=sun.awt.windows.WPrinterJob, sun.os.patch.level=Service Pack 1, catalina.base=C:\Users\Sergey\AppData\Local\Temp\tomcat.11042043974748144584.8080, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.cfgxml.spi.LoadedConfig@4ab1f1d2, java.library.path=D:\Program Files\Java\jdk-9.0.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;D:\Program Files\java\jdk-9.0.1\bin;D:\Program Files\apache-ant-1.10.5\bin;C:\Users\Sergey\Desktop\gradle-5.3.1\bin;., java.vendor=Oracle Corporation, java.vm.info=mixed mode, java.vm.version=9.0.1+11, hibernate.bytecode.use_reflection_optimizer=false, java.rmi.server.randomIDs=true, sun.io.unicode.encoding=UnicodeLittle, hibernate.connection.datasource=HikariDataSource (HikariPool-1), java.class.version=53.0}
+2019-05-22 16:34:24.293 DEBUG 14040 --- [restartedMain] o.h.v.i.e.resolver.TraversableResolvers  : Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2019-05-22 16:34:24.293 DEBUG 14040 --- [restartedMain] o.h.v.i.e.resolver.TraversableResolvers  : Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2019-05-22 16:34:24.294 DEBUG 14040 --- [restartedMain] o.h.v.i.xml.config.ValidationXmlParser   : Trying to load META-INF/validation.xml for XML based Validator configuration.
+2019-05-22 16:34:24.294 DEBUG 14040 --- [restartedMain] o.h.v.i.xml.config.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via TCCL
+2019-05-22 16:34:24.294 DEBUG 14040 --- [restartedMain] o.h.v.i.xml.config.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2019-05-22 16:34:24.294 DEBUG 14040 --- [restartedMain] o.h.v.i.xml.config.ValidationXmlParser   : No META-INF/validation.xml found. Using annotation based configuration only.
+2019-05-22 16:34:24.300 DEBUG 14040 --- [restartedMain] .h.v.m.ResourceBundleMessageInterpolator : Loaded expression factory via original TCCL
+2019-05-22 16:34:24.301 DEBUG 14040 --- [restartedMain] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2019-05-22 16:34:24.301 DEBUG 14040 --- [restartedMain] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
+2019-05-22 16:34:24.301 DEBUG 14040 --- [restartedMain] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2019-05-22 16:34:24.301 DEBUG 14040 --- [restartedMain] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2019-05-22 16:34:24.301 DEBUG 14040 --- [restartedMain] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2019-05-22 16:34:24.302 DEBUG 14040 --- [restartedMain] o.h.boot.internal.ClassLoaderAccessImpl  : Not known whether passed class name [MateAcad.HomeWork20MVC.entities.Programmer] is safe
+2019-05-22 16:34:24.302 DEBUG 14040 --- [restartedMain] o.h.boot.internal.ClassLoaderAccessImpl  : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : MateAcad.HomeWork20MVC.entities.Programmer
+2019-05-22 16:34:24.398 DEBUG 14040 --- [restartedMain] org.hibernate.secure.spi.JaccIntegrator  : Skipping JACC integration as it was not enabled
+2019-05-22 16:34:24.399 DEBUG 14040 --- [restartedMain] o.hibernate.internal.SessionFactoryImpl  : Instantiated session factory
+2019-05-22 16:34:24.399 DEBUG 14040 --- [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@632182a8] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@1e4c3251]
+2019-05-22 16:34:24.503 DEBUG 14040 --- [restartedMain] o.h.boot.internal.ClassLoaderAccessImpl  : Not known whether passed class name [MateAcad.HomeWork20MVC.entities.Programmer] is safe
+2019-05-22 16:34:24.504 DEBUG 14040 --- [restartedMain] o.h.boot.internal.ClassLoaderAccessImpl  : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : MateAcad.HomeWork20MVC.entities.Programmer
+2019-05-22 16:34:24.533 DEBUG 14040 --- [restartedMain] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum MateAcad.HomeWork20MVC.enums.AccessRights
+2019-05-22 16:34:24.533 DEBUG 14040 --- [restartedMain] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum MateAcad.HomeWork20MVC.enums.AccessRights
+2019-05-22 16:34:24.533 DEBUG 14040 --- [restartedMain] o.h.boot.internal.ClassLoaderAccessImpl  : Not known whether passed class name [MateAcad.HomeWork20MVC.entities.Programmer] is safe
+2019-05-22 16:34:24.533 DEBUG 14040 --- [restartedMain] o.h.boot.internal.ClassLoaderAccessImpl  : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : MateAcad.HomeWork20MVC.entities.Programmer
+2019-05-22 16:34:24.954 DEBUG 14040 --- [restartedMain] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum MateAcad.HomeWork20MVC.enums.AccessRights
+2019-05-22 16:34:24.954 DEBUG 14040 --- [restartedMain] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum MateAcad.HomeWork20MVC.enums.AccessRights
+2019-05-22 16:34:24.998 DEBUG 14040 --- [restartedMain] o.h.p.entity.AbstractEntityPersister     : Static SQL for entity: MateAcad.HomeWork20MVC.entities.Programmer
+2019-05-22 16:34:24.998 DEBUG 14040 --- [restartedMain] o.h.p.entity.AbstractEntityPersister     :  Version select: select id from programmers where id =?
+2019-05-22 16:34:24.998 DEBUG 14040 --- [restartedMain] o.h.p.entity.AbstractEntityPersister     :  Snapshot select: select programmer_.id, programmer_.created_date as created_2_0_, programmer_.access_rights as access_r3_0_, programmer_.birthday as birthday4_0_, programmer_.email as email5_0_, programmer_.name as name6_0_, programmer_.password as password7_0_, programmer_.surname as surname8_0_ from programmers programmer_ where programmer_.id=?
+2019-05-22 16:34:24.998 DEBUG 14040 --- [restartedMain] o.h.p.entity.AbstractEntityPersister     :  Insert 0: insert into programmers (created_date, access_rights, birthday, email, name, password, surname, id) values (?, ?, ?, ?, ?, ?, ?, ?)
+2019-05-22 16:34:24.998 DEBUG 14040 --- [restartedMain] o.h.p.entity.AbstractEntityPersister     :  Update 0: update programmers set created_date=?, access_rights=?, birthday=?, email=?, name=?, password=?, surname=? where id=?
+2019-05-22 16:34:24.998 DEBUG 14040 --- [restartedMain] o.h.p.entity.AbstractEntityPersister     :  Delete 0: delete from programmers where id=?
+2019-05-22 16:34:24.998 DEBUG 14040 --- [restartedMain] o.h.p.entity.AbstractEntityPersister     :  Identity insert: insert into programmers (created_date, access_rights, birthday, email, name, password, surname) values (?, ?, ?, ?, ?, ?, ?)
+2019-05-22 16:34:25.037 DEBUG 14040 --- [restartedMain] o.h.l.p.b.i.spaces.QuerySpacesImpl       : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@17fbfab]
+2019-05-22 16:34:25.038 DEBUG 14040 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : createdDate
+2019-05-22 16:34:25.039 DEBUG 14040 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : accessRights
+2019-05-22 16:34:25.039 DEBUG 14040 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : birthDay
+2019-05-22 16:34:25.039 DEBUG 14040 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : email
+2019-05-22 16:34:25.039 DEBUG 14040 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : name
+2019-05-22 16:34:25.039 DEBUG 14040 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : password
+2019-05-22 16:34:25.039 DEBUG 14040 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : surName
+2019-05-22 16:34:25.039 DEBUG 14040 --- [restartedMain] lanBuildingAssociationVisitationStrategy : Building LoadPlan...
+2019-05-22 16:34:25.050 DEBUG 14040 --- [restartedMain] h.l.p.e.i.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>
+2019-05-22 16:34:25.054 DEBUG 14040 --- [restartedMain] o.h.l.p.build.spi.LoadPlanTreePrinter    : LoadPlan(entity=MateAcad.HomeWork20MVC.entities.Programmer)
+    - Returns
+       - EntityReturnImpl(entity=MateAcad.HomeWork20MVC.entities.Programmer, querySpaceUid=<gen:0>, path=MateAcad.HomeWork20MVC.entities.Programmer)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=MateAcad.HomeWork20MVC.entities.Programmer)
+          - SQL table alias mapping - programmer0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+2019-05-22 16:34:25.056 DEBUG 14040 --- [restartedMain] o.h.loader.entity.plan.EntityLoader      : Static select for entity MateAcad.HomeWork20MVC.entities.Programmer [NONE]: select programmer0_.id as id1_0_0_, programmer0_.created_date as created_2_0_0_, programmer0_.access_rights as access_r3_0_0_, programmer0_.birthday as birthday4_0_0_, programmer0_.email as email5_0_0_, programmer0_.name as name6_0_0_, programmer0_.password as password7_0_0_, programmer0_.surname as surname8_0_0_ from programmers programmer0_ where programmer0_.id=?
+2019-05-22 16:34:25.056 DEBUG 14040 --- [restartedMain] o.h.l.p.b.i.spaces.QuerySpacesImpl       : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@bca4c91]
+2019-05-22 16:34:25.056 DEBUG 14040 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : createdDate
+2019-05-22 16:34:25.056 DEBUG 14040 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : accessRights
+2019-05-22 16:34:25.056 DEBUG 14040 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : birthDay
+2019-05-22 16:34:25.056 DEBUG 14040 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : email
+2019-05-22 16:34:25.056 DEBUG 14040 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : name
+2019-05-22 16:34:25.056 DEBUG 14040 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : password
+2019-05-22 16:34:25.056 DEBUG 14040 --- [restartedMain] o.h.p.walking.spi.MetamodelGraphWalker   : Visiting attribute path : surName
+2019-05-22 16:34:25.056 DEBUG 14040 --- [restartedMain] lanBuildingAssociationVisitationStrategy : Building LoadPlan...
+2019-05-22 16:34:25.056 DEBUG 14040 --- [restartedMain] h.l.p.e.i.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>
+2019-05-22 16:34:25.057 DEBUG 14040 --- [restartedMain] o.h.l.p.build.spi.LoadPlanTreePrinter    : LoadPlan(entity=MateAcad.HomeWork20MVC.entities.Programmer)
+    - Returns
+       - EntityReturnImpl(entity=MateAcad.HomeWork20MVC.entities.Programmer, querySpaceUid=<gen:0>, path=MateAcad.HomeWork20MVC.entities.Programmer)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=MateAcad.HomeWork20MVC.entities.Programmer)
+          - SQL table alias mapping - programmer0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+2019-05-22 16:34:25.057 DEBUG 14040 --- [restartedMain] o.h.loader.entity.plan.EntityLoader      : Static select for entity MateAcad.HomeWork20MVC.entities.Programmer [READ]: select programmer0_.id as id1_0_0_, programmer0_.created_date as created_2_0_0_, programmer0_.access_rights as access_r3_0_0_, programmer0_.birthday as birthday4_0_0_, programmer0_.email as email5_0_0_, programmer0_.name as name6_0_0_, programmer0_.password as password7_0_0_, programmer0_.surname as surname8_0_0_ from programmers programmer0_ where programmer0_.id=?
+2019-05-22 16:34:25.092 DEBUG 14040 --- [restartedMain] org.hibernate.loader.Loader              : Static select for action ACTION_MERGE on entity MateAcad.HomeWork20MVC.entities.Programmer: select programmer0_.id as id1_0_0_, programmer0_.created_date as created_2_0_0_, programmer0_.access_rights as access_r3_0_0_, programmer0_.birthday as birthday4_0_0_, programmer0_.email as email5_0_0_, programmer0_.name as name6_0_0_, programmer0_.password as password7_0_0_, programmer0_.surname as surname8_0_0_ from programmers programmer0_ where programmer0_.id=?
+2019-05-22 16:34:25.092 DEBUG 14040 --- [restartedMain] org.hibernate.loader.Loader              : Static select for action ACTION_REFRESH on entity MateAcad.HomeWork20MVC.entities.Programmer: select programmer0_.id as id1_0_0_, programmer0_.created_date as created_2_0_0_, programmer0_.access_rights as access_r3_0_0_, programmer0_.birthday as birthday4_0_0_, programmer0_.email as email5_0_0_, programmer0_.name as name6_0_0_, programmer0_.password as password7_0_0_, programmer0_.surname as surname8_0_0_ from programmers programmer0_ where programmer0_.id=?
+2019-05-22 16:34:25.129 DEBUG 14040 --- [restartedMain] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum MateAcad.HomeWork20MVC.enums.AccessRights
+2019-05-22 16:34:25.129 DEBUG 14040 --- [restartedMain] org.hibernate.type.EnumType              : Using NAMED-based conversion for Enum MateAcad.HomeWork20MVC.enums.AccessRights
+2019-05-22 16:34:26.620 DEBUG 14040 --- [restartedMain] org.hibernate.mapping.Table              : No alter strings for table : programmers
+2019-05-22 16:34:26.654 DEBUG 14040 --- [restartedMain] o.h.query.spi.NamedQueryRepository       : Checking 0 named HQL queries
+2019-05-22 16:34:26.654 DEBUG 14040 --- [restartedMain] o.h.query.spi.NamedQueryRepository       : Checking 0 named SQL queries
+2019-05-22 16:34:26.665 DEBUG 14040 --- [restartedMain] o.h.internal.SessionFactoryRegistry      : Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@13c9b799
+2019-05-22 16:34:26.665 DEBUG 14040 --- [restartedMain] o.h.internal.SessionFactoryRegistry      : Registering SessionFactory: 2735a995-582a-4a48-84c1-8c0c7639b97a (<unnamed>)
+2019-05-22 16:34:26.665 DEBUG 14040 --- [restartedMain] o.h.internal.SessionFactoryRegistry      : Not binding SessionFactory to JNDI, no JNDI name configured
+2019-05-22 16:34:26.666  INFO 14040 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-05-22 16:34:26.748  INFO 14040 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-05-22 16:34:27.243 DEBUG 14040 --- [restartedMain] o.h.stat.internal.StatisticsInitiator    : Statistics initialized [enabled=false]
+2019-05-22 16:34:27.530 DEBUG 14040 --- [restartedMain] o.h.e.t.internal.TransactionImpl         : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2019-05-22 16:34:27.643 DEBUG 14040 --- [restartedMain] o.h.e.t.internal.TransactionImpl         : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2019-05-22 16:34:27.843  WARN 14040 --- [restartedMain] o.s.security.core.userdetails.User       : User.withDefaultPasswordEncoder() is considered unsafe for production and is only intended for sample applications.
+2019-05-22 16:34:28.648  INFO 14040 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@9736be6, org.springframework.security.web.context.SecurityContextPersistenceFilter@73ede774, org.springframework.security.web.header.HeaderWriterFilter@4926b1e7, org.springframework.security.web.csrf.CsrfFilter@74b66476, org.springframework.security.web.authentication.logout.LogoutFilter@56511114, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@535575c9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3d50f6fa, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2ee9ab7e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2ba737c, org.springframework.security.web.session.SessionManagementFilter@c707824, org.springframework.security.web.access.ExceptionTranslationFilter@7bd372dc, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6ca5fde6]
+2019-05-22 16:34:28.701 DEBUG 14040 --- [restartedMain] o.h.v.i.e.resolver.TraversableResolvers  : Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2019-05-22 16:34:28.702 DEBUG 14040 --- [restartedMain] o.h.v.i.e.resolver.TraversableResolvers  : Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2019-05-22 16:34:28.702 DEBUG 14040 --- [restartedMain] .h.v.m.ResourceBundleMessageInterpolator : Loaded expression factory via original TCCL
+2019-05-22 16:34:28.704 DEBUG 14040 --- [restartedMain] o.h.v.i.e.resolver.TraversableResolvers  : Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+2019-05-22 16:34:28.704 DEBUG 14040 --- [restartedMain] o.h.v.i.e.resolver.TraversableResolvers  : Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+2019-05-22 16:34:28.705 DEBUG 14040 --- [restartedMain] o.h.v.internal.engine.ConfigurationImpl  : Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2019-05-22 16:34:28.705 DEBUG 14040 --- [restartedMain] o.h.v.internal.engine.ConfigurationImpl  : Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2019-05-22 16:34:28.705 DEBUG 14040 --- [restartedMain] o.h.v.internal.engine.ConfigurationImpl  : Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+2019-05-22 16:34:28.706 DEBUG 14040 --- [restartedMain] o.h.v.i.xml.config.ValidationXmlParser   : Trying to load META-INF/validation.xml for XML based Validator configuration.
+2019-05-22 16:34:28.707 DEBUG 14040 --- [restartedMain] o.h.v.i.xml.config.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via user class loader
+2019-05-22 16:34:28.707 DEBUG 14040 --- [restartedMain] o.h.v.i.xml.config.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via TCCL
+2019-05-22 16:34:28.707 DEBUG 14040 --- [restartedMain] o.h.v.i.xml.config.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2019-05-22 16:34:28.707 DEBUG 14040 --- [restartedMain] o.h.v.i.xml.config.ValidationXmlParser   : No META-INF/validation.xml found. Using annotation based configuration only.
+2019-05-22 16:34:28.712 DEBUG 14040 --- [restartedMain] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2019-05-22 16:34:28.712 DEBUG 14040 --- [restartedMain] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
+2019-05-22 16:34:28.712 DEBUG 14040 --- [restartedMain] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2019-05-22 16:34:28.712 DEBUG 14040 --- [restartedMain] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2019-05-22 16:34:28.712 DEBUG 14040 --- [restartedMain] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2019-05-22 16:34:29.369  INFO 14040 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-05-22 16:34:29.445  WARN 14040 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-05-22 16:34:30.549  INFO 14040 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-05-22 16:34:31.454  INFO 14040 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-05-22 16:34:31.459  INFO 14040 --- [restartedMain] M.H.HomeWork20MvcApplication             : Started HomeWork20MvcApplication in 30.506 seconds (JVM running for 41.328)
+2019-05-22 16:34:39.775  INFO 14040 --- [http-nio-8080-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [:j_idt8=; JSESSIONID=6411C119662321DCA222C429296D5302] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2019-05-22 16:34:39.874  INFO 14040 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-05-22 16:34:39.875  INFO 14040 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-05-22 16:34:40.135  INFO 14040 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 260 ms
+2019-05-22 16:34:40.898  WARN 14040 --- [http-nio-8080-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [192] milliseconds.
+2019-05-22 16:34:40.959  INFO 14040 --- [http-nio-8080-exec-4] M.H.interceptors.ProgrammerInterceptor   : PreHandle intercepted
+2019-05-22 16:34:40.971  INFO 14040 --- [http-nio-8080-exec-4] M.H.interceptors.ProgrammerInterceptor   : PostHandle intercepted
+2019-05-22 16:34:41.939  INFO 14040 --- [http-nio-8080-exec-4] M.H.interceptors.ProgrammerInterceptor   : afterCompletion message
+2019-05-22 16:34:41.943  INFO 14040 --- [http-nio-8080-exec-5] M.H.interceptors.ProgrammerInterceptor   : PreHandle intercepted
+2019-05-22 16:34:41.943  INFO 14040 --- [http-nio-8080-exec-5] M.H.interceptors.ProgrammerInterceptor   : PostHandle intercepted
+2019-05-22 16:34:41.951  INFO 14040 --- [http-nio-8080-exec-5] M.H.interceptors.ProgrammerInterceptor   : afterCompletion message
+2019-05-22 16:34:49.518  INFO 14040 --- [http-nio-8080-exec-9] M.H.interceptors.ProgrammerInterceptor   : PreHandle intercepted
+2019-05-22 16:34:49.642 DEBUG 14040 --- [http-nio-8080-exec-9] o.h.e.t.internal.TransactionImpl         : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2019-05-22 16:34:49.642 DEBUG 14040 --- [http-nio-8080-exec-9] o.h.e.t.internal.TransactionImpl         : begin
+2019-05-22 16:34:49.663 DEBUG 14040 --- [http-nio-8080-exec-9] o.h.q.c.internal.CriteriaQueryImpl       : Rendered criteria query -> select generatedAlias0 from Programmer as generatedAlias0
+2019-05-22 16:34:49.704 DEBUG 14040 --- [http-nio-8080-exec-9] o.h.h.i.QueryTranslatorFactoryInitiator  : QueryTranslatorFactory : org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory@6d6eaf0f
+2019-05-22 16:34:49.704  INFO 14040 --- [http-nio-8080-exec-9] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-05-22 16:34:49.732 DEBUG 14040 --- [http-nio-8080-exec-9] o.h.h.internal.ast.QueryTranslatorImpl   : parse() - HQL: select generatedAlias0 from MateAcad.HomeWork20MVC.entities.Programmer as generatedAlias0
+2019-05-22 16:34:49.753 DEBUG 14040 --- [http-nio-8080-exec-9] o.h.hql.internal.ast.ErrorTracker        : throwQueryException() : no errors
+2019-05-22 16:34:49.776 DEBUG 14040 --- [http-nio-8080-exec-9] o.h.h.internal.ast.QueryTranslatorImpl   : --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    \-[SELECT_FROM] Node: 'SELECT_FROM'
+       +-[FROM] Node: 'from'
+       |  \-[RANGE] Node: 'RANGE'
+       |     +-[DOT] Node: '.'
+       |     |  +-[DOT] Node: '.'
+       |     |  |  +-[DOT] Node: '.'
+       |     |  |  |  +-[IDENT] Node: 'MateAcad'
+       |     |  |  |  \-[IDENT] Node: 'HomeWork20MVC'
+       |     |  |  \-[IDENT] Node: 'entities'
+       |     |  \-[IDENT] Node: 'Programmer'
+       |     \-[ALIAS] Node: 'generatedAlias0'
+       \-[SELECT] Node: 'select'
+          \-[IDENT] Node: 'generatedAlias0'
+
+2019-05-22 16:34:49.799 DEBUG 14040 --- [http-nio-8080-exec-9] o.h.hql.internal.antlr.HqlSqlBaseWalker  : select << begin [level=1, statement=select]
+2019-05-22 16:34:49.814 DEBUG 14040 --- [http-nio-8080-exec-9] o.h.hql.internal.ast.tree.FromElement    : FromClause{level=1} : MateAcad.HomeWork20MVC.entities.Programmer (generatedAlias0) -> programmer0_
+2019-05-22 16:34:49.815 DEBUG 14040 --- [http-nio-8080-exec-9] o.h.h.i.ast.tree.FromReferenceNode       : Resolved : generatedAlias0 -> programmer0_.id
+2019-05-22 16:34:49.817 DEBUG 14040 --- [http-nio-8080-exec-9] o.h.hql.internal.antlr.HqlSqlBaseWalker  : select : finishing up [level=1, statement=select]
+2019-05-22 16:34:49.817 DEBUG 14040 --- [http-nio-8080-exec-9] o.h.hql.internal.ast.HqlSqlWalker        : processQuery() :  ( SELECT ( {select clause} programmer0_.id ) ( FromClause{level=1} programmers programmer0_ ) )
+2019-05-22 16:34:49.830 DEBUG 14040 --- [http-nio-8080-exec-9] o.h.hql.internal.ast.util.JoinProcessor  : Using FROM fragment [programmers programmer0_]
+2019-05-22 16:34:49.830 DEBUG 14040 --- [http-nio-8080-exec-9] o.h.hql.internal.antlr.HqlSqlBaseWalker  : select >> end [level=1, statement=select]
+2019-05-22 16:34:49.831 DEBUG 14040 --- [http-nio-8080-exec-9] o.h.h.internal.ast.QueryTranslatorImpl   : --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (programmers)
+    +-[SELECT_CLAUSE] SelectClause: '{select clause}'
+    |  +-[ALIAS_REF] IdentNode: 'programmer0_.id as id1_0_' {alias=generatedAlias0, className=MateAcad.HomeWork20MVC.entities.Programmer, tableAlias=programmer0_}
+    |  \-[SQL_TOKEN] SqlFragment: 'programmer0_.created_date as created_2_0_, programmer0_.access_rights as access_r3_0_, programmer0_.birthday as birthday4_0_, programmer0_.email as email5_0_, programmer0_.name as name6_0_, programmer0_.password as password7_0_, programmer0_.surname as surname8_0_'
+    \-[FROM] FromClause: 'from' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[generatedAlias0], fromElementByTableAlias=[programmer0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+       \-[FROM_FRAGMENT] FromElement: 'programmers programmer0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=generatedAlias0,role=null,tableName=programmers,tableAlias=programmer0_,origin=null,columns={,className=MateAcad.HomeWork20MVC.entities.Programmer}}
+
+2019-05-22 16:34:49.831 DEBUG 14040 --- [http-nio-8080-exec-9] o.h.hql.internal.ast.ErrorTracker        : throwQueryException() : no errors
+2019-05-22 16:34:49.843 DEBUG 14040 --- [http-nio-8080-exec-9] o.h.h.internal.ast.QueryTranslatorImpl   : HQL: select generatedAlias0 from MateAcad.HomeWork20MVC.entities.Programmer as generatedAlias0
+2019-05-22 16:34:49.843 DEBUG 14040 --- [http-nio-8080-exec-9] o.h.h.internal.ast.QueryTranslatorImpl   : SQL: select programmer0_.id as id1_0_, programmer0_.created_date as created_2_0_, programmer0_.access_rights as access_r3_0_, programmer0_.birthday as birthday4_0_, programmer0_.email as email5_0_, programmer0_.name as name6_0_, programmer0_.password as password7_0_, programmer0_.surname as surname8_0_ from programmers programmer0_
+2019-05-22 16:34:49.843 DEBUG 14040 --- [http-nio-8080-exec-9] o.h.hql.internal.ast.ErrorTracker        : throwQueryException() : no errors
+2019-05-22 16:34:49.873 DEBUG 14040 --- [http-nio-8080-exec-9] org.hibernate.SQL                        : select programmer0_.id as id1_0_, programmer0_.created_date as created_2_0_, programmer0_.access_rights as access_r3_0_, programmer0_.birthday as birthday4_0_, programmer0_.email as email5_0_, programmer0_.name as name6_0_, programmer0_.password as password7_0_, programmer0_.surname as surname8_0_ from programmers programmer0_
+2019-05-22 16:34:49.941 DEBUG 14040 --- [http-nio-8080-exec-9] org.hibernate.loader.Loader              : Result set row: 0
+2019-05-22 16:34:49.969 DEBUG 14040 --- [http-nio-8080-exec-9] org.hibernate.loader.Loader              : Result row: EntityKey[MateAcad.HomeWork20MVC.entities.Programmer#8]
+2019-05-22 16:34:49.985 DEBUG 14040 --- [http-nio-8080-exec-9] org.hibernate.loader.Loader              : Result set row: 1
+2019-05-22 16:34:49.985 DEBUG 14040 --- [http-nio-8080-exec-9] org.hibernate.loader.Loader              : Result row: EntityKey[MateAcad.HomeWork20MVC.entities.Programmer#9]
+2019-05-22 16:34:49.986 DEBUG 14040 --- [http-nio-8080-exec-9] org.hibernate.loader.Loader              : Result set row: 2
+2019-05-22 16:34:49.986 DEBUG 14040 --- [http-nio-8080-exec-9] org.hibernate.loader.Loader              : Result row: EntityKey[MateAcad.HomeWork20MVC.entities.Programmer#10]
+2019-05-22 16:34:49.986 DEBUG 14040 --- [http-nio-8080-exec-9] org.hibernate.loader.Loader              : Result set row: 3
+2019-05-22 16:34:49.986 DEBUG 14040 --- [http-nio-8080-exec-9] org.hibernate.loader.Loader              : Result row: EntityKey[MateAcad.HomeWork20MVC.entities.Programmer#23]
+2019-05-22 16:34:49.986 DEBUG 14040 --- [http-nio-8080-exec-9] org.hibernate.loader.Loader              : Result set row: 4
+2019-05-22 16:34:49.986 DEBUG 14040 --- [http-nio-8080-exec-9] org.hibernate.loader.Loader              : Result row: EntityKey[MateAcad.HomeWork20MVC.entities.Programmer#47]
+2019-05-22 16:34:49.987 DEBUG 14040 --- [http-nio-8080-exec-9] org.hibernate.loader.Loader              : Result set row: 5
+2019-05-22 16:34:49.987 DEBUG 14040 --- [http-nio-8080-exec-9] org.hibernate.loader.Loader              : Result row: EntityKey[MateAcad.HomeWork20MVC.entities.Programmer#48]
+2019-05-22 16:34:49.987 DEBUG 14040 --- [http-nio-8080-exec-9] org.hibernate.loader.Loader              : Result set row: 6
+2019-05-22 16:34:49.987 DEBUG 14040 --- [http-nio-8080-exec-9] org.hibernate.loader.Loader              : Result row: EntityKey[MateAcad.HomeWork20MVC.entities.Programmer#54]
+2019-05-22 16:34:49.987 DEBUG 14040 --- [http-nio-8080-exec-9] org.hibernate.loader.Loader              : Result set row: 7
+2019-05-22 16:34:49.987 DEBUG 14040 --- [http-nio-8080-exec-9] org.hibernate.loader.Loader              : Result row: EntityKey[MateAcad.HomeWork20MVC.entities.Programmer#61]
+2019-05-22 16:34:49.988 DEBUG 14040 --- [http-nio-8080-exec-9] org.hibernate.loader.Loader              : Result set row: 8
+2019-05-22 16:34:49.988 DEBUG 14040 --- [http-nio-8080-exec-9] org.hibernate.loader.Loader              : Result row: EntityKey[MateAcad.HomeWork20MVC.entities.Programmer#62]
+2019-05-22 16:34:49.988 DEBUG 14040 --- [http-nio-8080-exec-9] org.hibernate.loader.Loader              : Result set row: 9
+2019-05-22 16:34:49.988 DEBUG 14040 --- [http-nio-8080-exec-9] org.hibernate.loader.Loader              : Result row: EntityKey[MateAcad.HomeWork20MVC.entities.Programmer#64]
+2019-05-22 16:34:49.988 DEBUG 14040 --- [http-nio-8080-exec-9] org.hibernate.loader.Loader              : Result set row: 10
+2019-05-22 16:34:49.988 DEBUG 14040 --- [http-nio-8080-exec-9] org.hibernate.loader.Loader              : Result row: EntityKey[MateAcad.HomeWork20MVC.entities.Programmer#65]
+2019-05-22 16:34:49.988 DEBUG 14040 --- [http-nio-8080-exec-9] org.hibernate.loader.Loader              : Result set row: 11
+2019-05-22 16:34:49.988 DEBUG 14040 --- [http-nio-8080-exec-9] org.hibernate.loader.Loader              : Result row: EntityKey[MateAcad.HomeWork20MVC.entities.Programmer#66]
+2019-05-22 16:34:49.989 DEBUG 14040 --- [http-nio-8080-exec-9] org.hibernate.loader.Loader              : Result set row: 12
+2019-05-22 16:34:49.989 DEBUG 14040 --- [http-nio-8080-exec-9] org.hibernate.loader.Loader              : Result row: EntityKey[MateAcad.HomeWork20MVC.entities.Programmer#68]
+2019-05-22 16:34:49.989 DEBUG 14040 --- [http-nio-8080-exec-9] org.hibernate.loader.Loader              : Result set row: 13
+2019-05-22 16:34:49.989 DEBUG 14040 --- [http-nio-8080-exec-9] org.hibernate.loader.Loader              : Result row: EntityKey[MateAcad.HomeWork20MVC.entities.Programmer#69]
+2019-05-22 16:34:49.990 DEBUG 14040 --- [http-nio-8080-exec-9] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [MateAcad.HomeWork20MVC.entities.Programmer#8]
+2019-05-22 16:34:49.992 DEBUG 14040 --- [http-nio-8080-exec-9] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [MateAcad.HomeWork20MVC.entities.Programmer#8]
+2019-05-22 16:34:49.993 DEBUG 14040 --- [http-nio-8080-exec-9] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [MateAcad.HomeWork20MVC.entities.Programmer#9]
+2019-05-22 16:34:49.993 DEBUG 14040 --- [http-nio-8080-exec-9] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [MateAcad.HomeWork20MVC.entities.Programmer#9]
+2019-05-22 16:34:49.993 DEBUG 14040 --- [http-nio-8080-exec-9] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [MateAcad.HomeWork20MVC.entities.Programmer#10]
+2019-05-22 16:34:49.993 DEBUG 14040 --- [http-nio-8080-exec-9] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [MateAcad.HomeWork20MVC.entities.Programmer#10]
+2019-05-22 16:34:49.993 DEBUG 14040 --- [http-nio-8080-exec-9] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [MateAcad.HomeWork20MVC.entities.Programmer#23]
+2019-05-22 16:34:49.993 DEBUG 14040 --- [http-nio-8080-exec-9] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [MateAcad.HomeWork20MVC.entities.Programmer#23]
+2019-05-22 16:34:49.993 DEBUG 14040 --- [http-nio-8080-exec-9] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [MateAcad.HomeWork20MVC.entities.Programmer#47]
+2019-05-22 16:34:49.993 DEBUG 14040 --- [http-nio-8080-exec-9] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [MateAcad.HomeWork20MVC.entities.Programmer#47]
+2019-05-22 16:34:49.993 DEBUG 14040 --- [http-nio-8080-exec-9] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [MateAcad.HomeWork20MVC.entities.Programmer#48]
+2019-05-22 16:34:49.993 DEBUG 14040 --- [http-nio-8080-exec-9] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [MateAcad.HomeWork20MVC.entities.Programmer#48]
+2019-05-22 16:34:49.993 DEBUG 14040 --- [http-nio-8080-exec-9] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [MateAcad.HomeWork20MVC.entities.Programmer#54]
+2019-05-22 16:34:49.993 DEBUG 14040 --- [http-nio-8080-exec-9] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [MateAcad.HomeWork20MVC.entities.Programmer#54]
+2019-05-22 16:34:49.993 DEBUG 14040 --- [http-nio-8080-exec-9] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [MateAcad.HomeWork20MVC.entities.Programmer#61]
+2019-05-22 16:34:49.994 DEBUG 14040 --- [http-nio-8080-exec-9] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [MateAcad.HomeWork20MVC.entities.Programmer#61]
+2019-05-22 16:34:49.994 DEBUG 14040 --- [http-nio-8080-exec-9] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [MateAcad.HomeWork20MVC.entities.Programmer#62]
+2019-05-22 16:34:49.994 DEBUG 14040 --- [http-nio-8080-exec-9] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [MateAcad.HomeWork20MVC.entities.Programmer#62]
+2019-05-22 16:34:49.994 DEBUG 14040 --- [http-nio-8080-exec-9] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [MateAcad.HomeWork20MVC.entities.Programmer#64]
+2019-05-22 16:34:49.994 DEBUG 14040 --- [http-nio-8080-exec-9] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [MateAcad.HomeWork20MVC.entities.Programmer#64]
+2019-05-22 16:34:49.994 DEBUG 14040 --- [http-nio-8080-exec-9] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [MateAcad.HomeWork20MVC.entities.Programmer#65]
+2019-05-22 16:34:49.994 DEBUG 14040 --- [http-nio-8080-exec-9] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [MateAcad.HomeWork20MVC.entities.Programmer#65]
+2019-05-22 16:34:49.994 DEBUG 14040 --- [http-nio-8080-exec-9] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [MateAcad.HomeWork20MVC.entities.Programmer#66]
+2019-05-22 16:34:49.994 DEBUG 14040 --- [http-nio-8080-exec-9] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [MateAcad.HomeWork20MVC.entities.Programmer#66]
+2019-05-22 16:34:49.994 DEBUG 14040 --- [http-nio-8080-exec-9] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [MateAcad.HomeWork20MVC.entities.Programmer#68]
+2019-05-22 16:34:49.994 DEBUG 14040 --- [http-nio-8080-exec-9] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [MateAcad.HomeWork20MVC.entities.Programmer#68]
+2019-05-22 16:34:49.994 DEBUG 14040 --- [http-nio-8080-exec-9] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [MateAcad.HomeWork20MVC.entities.Programmer#69]
+2019-05-22 16:34:49.995 DEBUG 14040 --- [http-nio-8080-exec-9] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [MateAcad.HomeWork20MVC.entities.Programmer#69]
+2019-05-22 16:34:50.020 DEBUG 14040 --- [http-nio-8080-exec-9] o.h.e.t.internal.TransactionImpl         : committing
+2019-05-22 16:34:50.052  INFO 14040 --- [http-nio-8080-exec-9] M.H.interceptors.ProgrammerInterceptor   : PostHandle intercepted
+2019-05-22 16:34:50.088  INFO 14040 --- [http-nio-8080-exec-9] M.H.interceptors.ProgrammerInterceptor   : afterCompletion message
+2019-05-22 16:34:50.118  INFO 14040 --- [http-nio-8080-exec-10] M.H.interceptors.ProgrammerInterceptor   : PreHandle intercepted
+2019-05-22 16:34:50.214  INFO 14040 --- [http-nio-8080-exec-10] M.H.interceptors.ProgrammerInterceptor   : PostHandle intercepted
+2019-05-22 16:34:50.214  INFO 14040 --- [http-nio-8080-exec-10] M.H.interceptors.ProgrammerInterceptor   : afterCompletion message
+2019-05-22 16:34:58.374  INFO 14040 --- [http-nio-8080-exec-1] M.H.interceptors.ProgrammerInterceptor   : PreHandle intercepted
+2019-05-22 16:34:58.375  INFO 14040 --- [http-nio-8080-exec-1] M.H.interceptors.ProgrammerInterceptor   : PostHandle intercepted
+2019-05-22 16:34:58.379  INFO 14040 --- [http-nio-8080-exec-1] M.H.interceptors.ProgrammerInterceptor   : afterCompletion message
+2019-05-22 16:35:03.870  INFO 14040 --- [http-nio-8080-exec-7] M.H.interceptors.ProgrammerInterceptor   : PreHandle intercepted
+2019-05-22 16:35:03.872 DEBUG 14040 --- [http-nio-8080-exec-7] o.h.e.t.internal.TransactionImpl         : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2019-05-22 16:35:03.872 DEBUG 14040 --- [http-nio-8080-exec-7] o.h.e.t.internal.TransactionImpl         : begin
+2019-05-22 16:35:03.872 DEBUG 14040 --- [http-nio-8080-exec-7] o.h.q.c.internal.CriteriaQueryImpl       : Rendered criteria query -> select generatedAlias0 from Programmer as generatedAlias0
+2019-05-22 16:35:03.873 DEBUG 14040 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : select programmer0_.id as id1_0_, programmer0_.created_date as created_2_0_, programmer0_.access_rights as access_r3_0_, programmer0_.birthday as birthday4_0_, programmer0_.email as email5_0_, programmer0_.name as name6_0_, programmer0_.password as password7_0_, programmer0_.surname as surname8_0_ from programmers programmer0_
+2019-05-22 16:35:03.874 DEBUG 14040 --- [http-nio-8080-exec-7] org.hibernate.loader.Loader              : Result set row: 0
+2019-05-22 16:35:03.874 DEBUG 14040 --- [http-nio-8080-exec-7] org.hibernate.loader.Loader              : Result row: EntityKey[MateAcad.HomeWork20MVC.entities.Programmer#8]
+2019-05-22 16:35:03.874 DEBUG 14040 --- [http-nio-8080-exec-7] org.hibernate.loader.Loader              : Result set row: 1
+2019-05-22 16:35:03.874 DEBUG 14040 --- [http-nio-8080-exec-7] org.hibernate.loader.Loader              : Result row: EntityKey[MateAcad.HomeWork20MVC.entities.Programmer#9]
+2019-05-22 16:35:03.875 DEBUG 14040 --- [http-nio-8080-exec-7] org.hibernate.loader.Loader              : Result set row: 2
+2019-05-22 16:35:03.875 DEBUG 14040 --- [http-nio-8080-exec-7] org.hibernate.loader.Loader              : Result row: EntityKey[MateAcad.HomeWork20MVC.entities.Programmer#10]
+2019-05-22 16:35:03.875 DEBUG 14040 --- [http-nio-8080-exec-7] org.hibernate.loader.Loader              : Result set row: 3
+2019-05-22 16:35:03.875 DEBUG 14040 --- [http-nio-8080-exec-7] org.hibernate.loader.Loader              : Result row: EntityKey[MateAcad.HomeWork20MVC.entities.Programmer#23]
+2019-05-22 16:35:03.875 DEBUG 14040 --- [http-nio-8080-exec-7] org.hibernate.loader.Loader              : Result set row: 4
+2019-05-22 16:35:03.875 DEBUG 14040 --- [http-nio-8080-exec-7] org.hibernate.loader.Loader              : Result row: EntityKey[MateAcad.HomeWork20MVC.entities.Programmer#47]
+2019-05-22 16:35:03.876 DEBUG 14040 --- [http-nio-8080-exec-7] org.hibernate.loader.Loader              : Result set row: 5
+2019-05-22 16:35:03.876 DEBUG 14040 --- [http-nio-8080-exec-7] org.hibernate.loader.Loader              : Result row: EntityKey[MateAcad.HomeWork20MVC.entities.Programmer#48]
+2019-05-22 16:35:03.876 DEBUG 14040 --- [http-nio-8080-exec-7] org.hibernate.loader.Loader              : Result set row: 6
+2019-05-22 16:35:03.876 DEBUG 14040 --- [http-nio-8080-exec-7] org.hibernate.loader.Loader              : Result row: EntityKey[MateAcad.HomeWork20MVC.entities.Programmer#54]
+2019-05-22 16:35:03.876 DEBUG 14040 --- [http-nio-8080-exec-7] org.hibernate.loader.Loader              : Result set row: 7
+2019-05-22 16:35:03.876 DEBUG 14040 --- [http-nio-8080-exec-7] org.hibernate.loader.Loader              : Result row: EntityKey[MateAcad.HomeWork20MVC.entities.Programmer#61]
+2019-05-22 16:35:03.876 DEBUG 14040 --- [http-nio-8080-exec-7] org.hibernate.loader.Loader              : Result set row: 8
+2019-05-22 16:35:03.876 DEBUG 14040 --- [http-nio-8080-exec-7] org.hibernate.loader.Loader              : Result row: EntityKey[MateAcad.HomeWork20MVC.entities.Programmer#62]
+2019-05-22 16:35:03.876 DEBUG 14040 --- [http-nio-8080-exec-7] org.hibernate.loader.Loader              : Result set row: 9
+2019-05-22 16:35:03.877 DEBUG 14040 --- [http-nio-8080-exec-7] org.hibernate.loader.Loader              : Result row: EntityKey[MateAcad.HomeWork20MVC.entities.Programmer#64]
+2019-05-22 16:35:03.877 DEBUG 14040 --- [http-nio-8080-exec-7] org.hibernate.loader.Loader              : Result set row: 10
+2019-05-22 16:35:03.877 DEBUG 14040 --- [http-nio-8080-exec-7] org.hibernate.loader.Loader              : Result row: EntityKey[MateAcad.HomeWork20MVC.entities.Programmer#65]
+2019-05-22 16:35:03.877 DEBUG 14040 --- [http-nio-8080-exec-7] org.hibernate.loader.Loader              : Result set row: 11
+2019-05-22 16:35:03.877 DEBUG 14040 --- [http-nio-8080-exec-7] org.hibernate.loader.Loader              : Result row: EntityKey[MateAcad.HomeWork20MVC.entities.Programmer#66]
+2019-05-22 16:35:03.877 DEBUG 14040 --- [http-nio-8080-exec-7] org.hibernate.loader.Loader              : Result set row: 12
+2019-05-22 16:35:03.877 DEBUG 14040 --- [http-nio-8080-exec-7] org.hibernate.loader.Loader              : Result row: EntityKey[MateAcad.HomeWork20MVC.entities.Programmer#68]
+2019-05-22 16:35:03.877 DEBUG 14040 --- [http-nio-8080-exec-7] org.hibernate.loader.Loader              : Result set row: 13
+2019-05-22 16:35:03.878 DEBUG 14040 --- [http-nio-8080-exec-7] org.hibernate.loader.Loader              : Result row: EntityKey[MateAcad.HomeWork20MVC.entities.Programmer#69]
+2019-05-22 16:35:03.878 DEBUG 14040 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [MateAcad.HomeWork20MVC.entities.Programmer#8]
+2019-05-22 16:35:03.878 DEBUG 14040 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [MateAcad.HomeWork20MVC.entities.Programmer#8]
+2019-05-22 16:35:03.878 DEBUG 14040 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [MateAcad.HomeWork20MVC.entities.Programmer#9]
+2019-05-22 16:35:03.878 DEBUG 14040 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [MateAcad.HomeWork20MVC.entities.Programmer#9]
+2019-05-22 16:35:03.878 DEBUG 14040 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [MateAcad.HomeWork20MVC.entities.Programmer#10]
+2019-05-22 16:35:03.878 DEBUG 14040 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [MateAcad.HomeWork20MVC.entities.Programmer#10]
+2019-05-22 16:35:03.878 DEBUG 14040 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [MateAcad.HomeWork20MVC.entities.Programmer#23]
+2019-05-22 16:35:03.878 DEBUG 14040 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [MateAcad.HomeWork20MVC.entities.Programmer#23]
+2019-05-22 16:35:03.878 DEBUG 14040 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [MateAcad.HomeWork20MVC.entities.Programmer#47]
+2019-05-22 16:35:03.878 DEBUG 14040 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [MateAcad.HomeWork20MVC.entities.Programmer#47]
+2019-05-22 16:35:03.878 DEBUG 14040 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [MateAcad.HomeWork20MVC.entities.Programmer#48]
+2019-05-22 16:35:03.879 DEBUG 14040 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [MateAcad.HomeWork20MVC.entities.Programmer#48]
+2019-05-22 16:35:03.879 DEBUG 14040 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [MateAcad.HomeWork20MVC.entities.Programmer#54]
+2019-05-22 16:35:03.879 DEBUG 14040 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [MateAcad.HomeWork20MVC.entities.Programmer#54]
+2019-05-22 16:35:03.879 DEBUG 14040 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [MateAcad.HomeWork20MVC.entities.Programmer#61]
+2019-05-22 16:35:03.879 DEBUG 14040 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [MateAcad.HomeWork20MVC.entities.Programmer#61]
+2019-05-22 16:35:03.879 DEBUG 14040 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [MateAcad.HomeWork20MVC.entities.Programmer#62]
+2019-05-22 16:35:03.879 DEBUG 14040 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [MateAcad.HomeWork20MVC.entities.Programmer#62]
+2019-05-22 16:35:03.879 DEBUG 14040 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [MateAcad.HomeWork20MVC.entities.Programmer#64]
+2019-05-22 16:35:03.879 DEBUG 14040 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [MateAcad.HomeWork20MVC.entities.Programmer#64]
+2019-05-22 16:35:03.879 DEBUG 14040 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [MateAcad.HomeWork20MVC.entities.Programmer#65]
+2019-05-22 16:35:03.879 DEBUG 14040 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [MateAcad.HomeWork20MVC.entities.Programmer#65]
+2019-05-22 16:35:03.879 DEBUG 14040 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [MateAcad.HomeWork20MVC.entities.Programmer#66]
+2019-05-22 16:35:03.879 DEBUG 14040 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [MateAcad.HomeWork20MVC.entities.Programmer#66]
+2019-05-22 16:35:03.879 DEBUG 14040 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [MateAcad.HomeWork20MVC.entities.Programmer#68]
+2019-05-22 16:35:03.879 DEBUG 14040 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [MateAcad.HomeWork20MVC.entities.Programmer#68]
+2019-05-22 16:35:03.880 DEBUG 14040 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [MateAcad.HomeWork20MVC.entities.Programmer#69]
+2019-05-22 16:35:03.880 DEBUG 14040 --- [http-nio-8080-exec-7] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [MateAcad.HomeWork20MVC.entities.Programmer#69]
+2019-05-22 16:35:03.880 DEBUG 14040 --- [http-nio-8080-exec-7] o.h.e.t.internal.TransactionImpl         : committing
+2019-05-22 16:35:03.884  INFO 14040 --- [http-nio-8080-exec-7] M.H.interceptors.ProgrammerInterceptor   : PostHandle intercepted
+2019-05-22 16:35:03.899  INFO 14040 --- [http-nio-8080-exec-7] M.H.interceptors.ProgrammerInterceptor   : afterCompletion message
+2019-05-22 16:35:03.919  INFO 14040 --- [http-nio-8080-exec-6] M.H.interceptors.ProgrammerInterceptor   : PreHandle intercepted
+2019-05-22 16:35:03.922  INFO 14040 --- [http-nio-8080-exec-6] M.H.interceptors.ProgrammerInterceptor   : PostHandle intercepted
+2019-05-22 16:35:03.923  INFO 14040 --- [http-nio-8080-exec-6] M.H.interceptors.ProgrammerInterceptor   : afterCompletion message
+2019-05-22 16:35:08.755  INFO 14040 --- [http-nio-8080-exec-8] M.H.interceptors.ProgrammerInterceptor   : PreHandle intercepted
+2019-05-22 16:35:08.766 DEBUG 14040 --- [http-nio-8080-exec-8] o.h.e.t.internal.TransactionImpl         : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2019-05-22 16:35:08.766 DEBUG 14040 --- [http-nio-8080-exec-8] o.h.e.t.internal.TransactionImpl         : begin
+2019-05-22 16:35:08.768 DEBUG 14040 --- [http-nio-8080-exec-8] org.hibernate.SQL                        : select programmer0_.id as id1_0_0_, programmer0_.created_date as created_2_0_0_, programmer0_.access_rights as access_r3_0_0_, programmer0_.birthday as birthday4_0_0_, programmer0_.email as email5_0_0_, programmer0_.name as name6_0_0_, programmer0_.password as password7_0_0_, programmer0_.surname as surname8_0_0_ from programmers programmer0_ where programmer0_.id=?
+2019-05-22 16:35:08.772 DEBUG 14040 --- [http-nio-8080-exec-8] o.h.l.p.e.p.i.ResultSetProcessorImpl     : Starting ResultSet row #0
+2019-05-22 16:35:08.773 DEBUG 14040 --- [http-nio-8080-exec-8] l.p.e.p.i.EntityReferenceInitializerImpl : On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+2019-05-22 16:35:08.774 DEBUG 14040 --- [http-nio-8080-exec-8] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [MateAcad.HomeWork20MVC.entities.Programmer#65]
+2019-05-22 16:35:08.774 DEBUG 14040 --- [http-nio-8080-exec-8] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [MateAcad.HomeWork20MVC.entities.Programmer#65]
+2019-05-22 16:35:08.775 DEBUG 14040 --- [http-nio-8080-exec-8] o.h.r.j.i.ResourceRegistryStandardImpl   : HHH000387: ResultSet's statement was not registered
+2019-05-22 16:35:08.775 DEBUG 14040 --- [http-nio-8080-exec-8] .l.e.p.AbstractLoadPlanBasedEntityLoader : Done entity load : MateAcad.HomeWork20MVC.entities.Programmer#65
+2019-05-22 16:35:08.775 DEBUG 14040 --- [http-nio-8080-exec-8] o.h.e.t.internal.TransactionImpl         : committing
+2019-05-22 16:35:08.782  INFO 14040 --- [http-nio-8080-exec-8] M.H.interceptors.ProgrammerInterceptor   : PostHandle intercepted
+2019-05-22 16:35:08.875  INFO 14040 --- [http-nio-8080-exec-8] M.H.interceptors.ProgrammerInterceptor   : afterCompletion message
+2019-05-22 16:35:08.903  INFO 14040 --- [http-nio-8080-exec-9] M.H.interceptors.ProgrammerInterceptor   : PreHandle intercepted
+2019-05-22 16:35:08.906  INFO 14040 --- [http-nio-8080-exec-9] M.H.interceptors.ProgrammerInterceptor   : PostHandle intercepted
+2019-05-22 16:35:08.907  INFO 14040 --- [http-nio-8080-exec-9] M.H.interceptors.ProgrammerInterceptor   : afterCompletion message
+2019-05-22 16:35:21.655  INFO 14040 --- [http-nio-8080-exec-1] M.H.interceptors.ProgrammerInterceptor   : PreHandle intercepted
+2019-05-22 16:35:21.699 DEBUG 14040 --- [http-nio-8080-exec-1] o.h.e.t.internal.TransactionImpl         : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2019-05-22 16:35:21.699 DEBUG 14040 --- [http-nio-8080-exec-1] o.h.e.t.internal.TransactionImpl         : begin
+2019-05-22 16:35:21.702 DEBUG 14040 --- [http-nio-8080-exec-1] o.h.e.i.DefaultMergeEventListener        : EntityCopyObserver strategy: disallow
+2019-05-22 16:35:21.704 DEBUG 14040 --- [http-nio-8080-exec-1] org.hibernate.loader.Loader              : Loading entity: [MateAcad.HomeWork20MVC.entities.Programmer#65]
+2019-05-22 16:35:21.704 DEBUG 14040 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : select programmer0_.id as id1_0_0_, programmer0_.created_date as created_2_0_0_, programmer0_.access_rights as access_r3_0_0_, programmer0_.birthday as birthday4_0_0_, programmer0_.email as email5_0_0_, programmer0_.name as name6_0_0_, programmer0_.password as password7_0_0_, programmer0_.surname as surname8_0_0_ from programmers programmer0_ where programmer0_.id=?
+2019-05-22 16:35:21.707 DEBUG 14040 --- [http-nio-8080-exec-1] org.hibernate.loader.Loader              : Result set row: 0
+2019-05-22 16:35:21.707 DEBUG 14040 --- [http-nio-8080-exec-1] org.hibernate.loader.Loader              : Result row: EntityKey[MateAcad.HomeWork20MVC.entities.Programmer#65]
+2019-05-22 16:35:21.707 DEBUG 14040 --- [http-nio-8080-exec-1] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [MateAcad.HomeWork20MVC.entities.Programmer#65]
+2019-05-22 16:35:21.708 DEBUG 14040 --- [http-nio-8080-exec-1] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [MateAcad.HomeWork20MVC.entities.Programmer#65]
+2019-05-22 16:35:21.708 DEBUG 14040 --- [http-nio-8080-exec-1] org.hibernate.loader.Loader              : Done entity load
+2019-05-22 16:35:21.711 DEBUG 14040 --- [http-nio-8080-exec-1] o.h.e.t.internal.TransactionImpl         : committing
+2019-05-22 16:35:21.712 DEBUG 14040 --- [http-nio-8080-exec-1] o.h.e.i.AbstractFlushingEventListener    : Processing flush-time cascades
+2019-05-22 16:35:21.712 DEBUG 14040 --- [http-nio-8080-exec-1] o.h.e.i.AbstractFlushingEventListener    : Dirty checking collections
+2019-05-22 16:35:21.716 DEBUG 14040 --- [http-nio-8080-exec-1] o.h.e.i.AbstractFlushingEventListener    : Flushed: 0 insertions, 1 updates, 0 deletions to 1 objects
+2019-05-22 16:35:21.716 DEBUG 14040 --- [http-nio-8080-exec-1] o.h.e.i.AbstractFlushingEventListener    : Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2019-05-22 16:35:21.717 DEBUG 14040 --- [http-nio-8080-exec-1] o.hibernate.internal.util.EntityPrinter  : Listing entities:
+2019-05-22 16:35:21.717 DEBUG 14040 --- [http-nio-8080-exec-1] o.hibernate.internal.util.EntityPrinter  : MateAcad.HomeWork20MVC.entities.Programmer{birthDay=1984-01-01, password=null, createdDate=null, surName=aab, name=aa, id=65, accessRights=null, email=aa@aa.net}
+2019-05-22 16:35:21.774 DEBUG 14040 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : update programmers set created_date=?, access_rights=?, birthday=?, email=?, name=?, password=?, surname=? where id=?
+2019-05-22 16:35:22.340  INFO 14040 --- [http-nio-8080-exec-1] M.H.interceptors.ProgrammerInterceptor   : PostHandle intercepted
+2019-05-22 16:35:22.344  INFO 14040 --- [http-nio-8080-exec-1] M.H.interceptors.ProgrammerInterceptor   : afterCompletion message
+2019-05-22 16:35:22.351  INFO 14040 --- [http-nio-8080-exec-4] M.H.interceptors.ProgrammerInterceptor   : PreHandle intercepted
+2019-05-22 16:35:22.352 DEBUG 14040 --- [http-nio-8080-exec-4] o.h.e.t.internal.TransactionImpl         : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2019-05-22 16:35:22.352 DEBUG 14040 --- [http-nio-8080-exec-4] o.h.e.t.internal.TransactionImpl         : begin
+2019-05-22 16:35:22.352 DEBUG 14040 --- [http-nio-8080-exec-4] o.h.q.c.internal.CriteriaQueryImpl       : Rendered criteria query -> select generatedAlias0 from Programmer as generatedAlias0
+2019-05-22 16:35:22.353 DEBUG 14040 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : select programmer0_.id as id1_0_, programmer0_.created_date as created_2_0_, programmer0_.access_rights as access_r3_0_, programmer0_.birthday as birthday4_0_, programmer0_.email as email5_0_, programmer0_.name as name6_0_, programmer0_.password as password7_0_, programmer0_.surname as surname8_0_ from programmers programmer0_
+2019-05-22 16:35:22.354 DEBUG 14040 --- [http-nio-8080-exec-4] org.hibernate.loader.Loader              : Result set row: 0
+2019-05-22 16:35:22.354 DEBUG 14040 --- [http-nio-8080-exec-4] org.hibernate.loader.Loader              : Result row: EntityKey[MateAcad.HomeWork20MVC.entities.Programmer#8]
+2019-05-22 16:35:22.354 DEBUG 14040 --- [http-nio-8080-exec-4] org.hibernate.loader.Loader              : Result set row: 1
+2019-05-22 16:35:22.354 DEBUG 14040 --- [http-nio-8080-exec-4] org.hibernate.loader.Loader              : Result row: EntityKey[MateAcad.HomeWork20MVC.entities.Programmer#9]
+2019-05-22 16:35:22.354 DEBUG 14040 --- [http-nio-8080-exec-4] org.hibernate.loader.Loader              : Result set row: 2
+2019-05-22 16:35:22.354 DEBUG 14040 --- [http-nio-8080-exec-4] org.hibernate.loader.Loader              : Result row: EntityKey[MateAcad.HomeWork20MVC.entities.Programmer#10]
+2019-05-22 16:35:22.354 DEBUG 14040 --- [http-nio-8080-exec-4] org.hibernate.loader.Loader              : Result set row: 3
+2019-05-22 16:35:22.354 DEBUG 14040 --- [http-nio-8080-exec-4] org.hibernate.loader.Loader              : Result row: EntityKey[MateAcad.HomeWork20MVC.entities.Programmer#23]
+2019-05-22 16:35:22.355 DEBUG 14040 --- [http-nio-8080-exec-4] org.hibernate.loader.Loader              : Result set row: 4
+2019-05-22 16:35:22.355 DEBUG 14040 --- [http-nio-8080-exec-4] org.hibernate.loader.Loader              : Result row: EntityKey[MateAcad.HomeWork20MVC.entities.Programmer#47]
+2019-05-22 16:35:22.355 DEBUG 14040 --- [http-nio-8080-exec-4] org.hibernate.loader.Loader              : Result set row: 5
+2019-05-22 16:35:22.355 DEBUG 14040 --- [http-nio-8080-exec-4] org.hibernate.loader.Loader              : Result row: EntityKey[MateAcad.HomeWork20MVC.entities.Programmer#48]
+2019-05-22 16:35:22.355 DEBUG 14040 --- [http-nio-8080-exec-4] org.hibernate.loader.Loader              : Result set row: 6
+2019-05-22 16:35:22.355 DEBUG 14040 --- [http-nio-8080-exec-4] org.hibernate.loader.Loader              : Result row: EntityKey[MateAcad.HomeWork20MVC.entities.Programmer#54]
+2019-05-22 16:35:22.355 DEBUG 14040 --- [http-nio-8080-exec-4] org.hibernate.loader.Loader              : Result set row: 7
+2019-05-22 16:35:22.356 DEBUG 14040 --- [http-nio-8080-exec-4] org.hibernate.loader.Loader              : Result row: EntityKey[MateAcad.HomeWork20MVC.entities.Programmer#61]
+2019-05-22 16:35:22.356 DEBUG 14040 --- [http-nio-8080-exec-4] org.hibernate.loader.Loader              : Result set row: 8
+2019-05-22 16:35:22.356 DEBUG 14040 --- [http-nio-8080-exec-4] org.hibernate.loader.Loader              : Result row: EntityKey[MateAcad.HomeWork20MVC.entities.Programmer#62]
+2019-05-22 16:35:22.356 DEBUG 14040 --- [http-nio-8080-exec-4] org.hibernate.loader.Loader              : Result set row: 9
+2019-05-22 16:35:22.356 DEBUG 14040 --- [http-nio-8080-exec-4] org.hibernate.loader.Loader              : Result row: EntityKey[MateAcad.HomeWork20MVC.entities.Programmer#64]
+2019-05-22 16:35:22.356 DEBUG 14040 --- [http-nio-8080-exec-4] org.hibernate.loader.Loader              : Result set row: 10
+2019-05-22 16:35:22.356 DEBUG 14040 --- [http-nio-8080-exec-4] org.hibernate.loader.Loader              : Result row: EntityKey[MateAcad.HomeWork20MVC.entities.Programmer#65]
+2019-05-22 16:35:22.357 DEBUG 14040 --- [http-nio-8080-exec-4] org.hibernate.loader.Loader              : Result set row: 11
+2019-05-22 16:35:22.357 DEBUG 14040 --- [http-nio-8080-exec-4] org.hibernate.loader.Loader              : Result row: EntityKey[MateAcad.HomeWork20MVC.entities.Programmer#66]
+2019-05-22 16:35:22.357 DEBUG 14040 --- [http-nio-8080-exec-4] org.hibernate.loader.Loader              : Result set row: 12
+2019-05-22 16:35:22.357 DEBUG 14040 --- [http-nio-8080-exec-4] org.hibernate.loader.Loader              : Result row: EntityKey[MateAcad.HomeWork20MVC.entities.Programmer#68]
+2019-05-22 16:35:22.357 DEBUG 14040 --- [http-nio-8080-exec-4] org.hibernate.loader.Loader              : Result set row: 13
+2019-05-22 16:35:22.357 DEBUG 14040 --- [http-nio-8080-exec-4] org.hibernate.loader.Loader              : Result row: EntityKey[MateAcad.HomeWork20MVC.entities.Programmer#69]
+2019-05-22 16:35:22.357 DEBUG 14040 --- [http-nio-8080-exec-4] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [MateAcad.HomeWork20MVC.entities.Programmer#8]
+2019-05-22 16:35:22.357 DEBUG 14040 --- [http-nio-8080-exec-4] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [MateAcad.HomeWork20MVC.entities.Programmer#8]
+2019-05-22 16:35:22.357 DEBUG 14040 --- [http-nio-8080-exec-4] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [MateAcad.HomeWork20MVC.entities.Programmer#9]
+2019-05-22 16:35:22.358 DEBUG 14040 --- [http-nio-8080-exec-4] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [MateAcad.HomeWork20MVC.entities.Programmer#9]
+2019-05-22 16:35:22.358 DEBUG 14040 --- [http-nio-8080-exec-4] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [MateAcad.HomeWork20MVC.entities.Programmer#10]
+2019-05-22 16:35:22.358 DEBUG 14040 --- [http-nio-8080-exec-4] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [MateAcad.HomeWork20MVC.entities.Programmer#10]
+2019-05-22 16:35:22.358 DEBUG 14040 --- [http-nio-8080-exec-4] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [MateAcad.HomeWork20MVC.entities.Programmer#23]
+2019-05-22 16:35:22.358 DEBUG 14040 --- [http-nio-8080-exec-4] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [MateAcad.HomeWork20MVC.entities.Programmer#23]
+2019-05-22 16:35:22.358 DEBUG 14040 --- [http-nio-8080-exec-4] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [MateAcad.HomeWork20MVC.entities.Programmer#47]
+2019-05-22 16:35:22.358 DEBUG 14040 --- [http-nio-8080-exec-4] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [MateAcad.HomeWork20MVC.entities.Programmer#47]
+2019-05-22 16:35:22.358 DEBUG 14040 --- [http-nio-8080-exec-4] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [MateAcad.HomeWork20MVC.entities.Programmer#48]
+2019-05-22 16:35:22.358 DEBUG 14040 --- [http-nio-8080-exec-4] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [MateAcad.HomeWork20MVC.entities.Programmer#48]
+2019-05-22 16:35:22.358 DEBUG 14040 --- [http-nio-8080-exec-4] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [MateAcad.HomeWork20MVC.entities.Programmer#54]
+2019-05-22 16:35:22.358 DEBUG 14040 --- [http-nio-8080-exec-4] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [MateAcad.HomeWork20MVC.entities.Programmer#54]
+2019-05-22 16:35:22.358 DEBUG 14040 --- [http-nio-8080-exec-4] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [MateAcad.HomeWork20MVC.entities.Programmer#61]
+2019-05-22 16:35:22.358 DEBUG 14040 --- [http-nio-8080-exec-4] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [MateAcad.HomeWork20MVC.entities.Programmer#61]
+2019-05-22 16:35:22.358 DEBUG 14040 --- [http-nio-8080-exec-4] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [MateAcad.HomeWork20MVC.entities.Programmer#62]
+2019-05-22 16:35:22.358 DEBUG 14040 --- [http-nio-8080-exec-4] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [MateAcad.HomeWork20MVC.entities.Programmer#62]
+2019-05-22 16:35:22.358 DEBUG 14040 --- [http-nio-8080-exec-4] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [MateAcad.HomeWork20MVC.entities.Programmer#64]
+2019-05-22 16:35:22.358 DEBUG 14040 --- [http-nio-8080-exec-4] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [MateAcad.HomeWork20MVC.entities.Programmer#64]
+2019-05-22 16:35:22.359 DEBUG 14040 --- [http-nio-8080-exec-4] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [MateAcad.HomeWork20MVC.entities.Programmer#65]
+2019-05-22 16:35:22.359 DEBUG 14040 --- [http-nio-8080-exec-4] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [MateAcad.HomeWork20MVC.entities.Programmer#65]
+2019-05-22 16:35:22.359 DEBUG 14040 --- [http-nio-8080-exec-4] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [MateAcad.HomeWork20MVC.entities.Programmer#66]
+2019-05-22 16:35:22.359 DEBUG 14040 --- [http-nio-8080-exec-4] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [MateAcad.HomeWork20MVC.entities.Programmer#66]
+2019-05-22 16:35:22.359 DEBUG 14040 --- [http-nio-8080-exec-4] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [MateAcad.HomeWork20MVC.entities.Programmer#68]
+2019-05-22 16:35:22.359 DEBUG 14040 --- [http-nio-8080-exec-4] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [MateAcad.HomeWork20MVC.entities.Programmer#68]
+2019-05-22 16:35:22.359 DEBUG 14040 --- [http-nio-8080-exec-4] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [MateAcad.HomeWork20MVC.entities.Programmer#69]
+2019-05-22 16:35:22.359 DEBUG 14040 --- [http-nio-8080-exec-4] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [MateAcad.HomeWork20MVC.entities.Programmer#69]
+2019-05-22 16:35:22.359 DEBUG 14040 --- [http-nio-8080-exec-4] o.h.e.t.internal.TransactionImpl         : committing
+2019-05-22 16:35:22.361  INFO 14040 --- [http-nio-8080-exec-4] M.H.interceptors.ProgrammerInterceptor   : PostHandle intercepted
+2019-05-22 16:35:22.371  INFO 14040 --- [http-nio-8080-exec-4] M.H.interceptors.ProgrammerInterceptor   : afterCompletion message
+2019-05-22 16:35:22.387  INFO 14040 --- [http-nio-8080-exec-3] M.H.interceptors.ProgrammerInterceptor   : PreHandle intercepted
+2019-05-22 16:35:22.391  INFO 14040 --- [http-nio-8080-exec-3] M.H.interceptors.ProgrammerInterceptor   : PostHandle intercepted
+2019-05-22 16:35:22.391  INFO 14040 --- [http-nio-8080-exec-3] M.H.interceptors.ProgrammerInterceptor   : afterCompletion message
+2019-05-22 16:36:24.428  INFO 14040 --- [Thread-8] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-05-22 16:36:24.430  INFO 14040 --- [Thread-8] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-05-22 16:36:24.430 DEBUG 14040 --- [Thread-8] o.hibernate.internal.SessionFactoryImpl  : HHH000031: Closing
+2019-05-22 16:36:24.430 DEBUG 14040 --- [Thread-8] o.h.type.spi.TypeConfiguration$Scope     : Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@84c1fcf] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@1e4c3251]
+2019-05-22 16:36:24.437 DEBUG 14040 --- [Thread-8] o.h.s.i.AbstractServiceRegistryImpl      : Implicitly destroying ServiceRegistry on de-registration of all child ServiceRegistries
+2019-05-22 16:36:24.437 DEBUG 14040 --- [Thread-8] o.h.b.r.i.BootstrapServiceRegistryImpl   : Implicitly destroying Boot-strap registry on de-registration of all child ServiceRegistries
+2019-05-22 16:36:24.439  INFO 14040 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-05-22 16:36:24.446  INFO 14040 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

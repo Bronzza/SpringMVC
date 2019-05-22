@@ -1,5 +1,6 @@
 package MateAcad.HomeWork20MVC.entities;
 
+import MateAcad.HomeWork20MVC.enums.AccessRights;
 import MateAcad.HomeWork20MVC.listeners.ProgrammerListener;
 import MateAcad.HomeWork20MVC.listeners.ProgrammerListenerCreatedDate;
 import lombok.AllArgsConstructor;
@@ -14,6 +15,8 @@ import org.springframework.format.annotation.DateTimeFormat;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.EntityListeners;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.persistence.Table;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.Min;
@@ -39,13 +42,18 @@ public class Programmer extends CreatableEntity {
     @Column(name = "surname")
     private String surName;
 
-
     @Column(name = "birthday")
     @DateTimeFormat(pattern = "dd.MM.yyyy")
     private LocalDate birthDay;
 
-
     @Email
     @Column(name = "email")
     private String email;
+
+    @Enumerated (EnumType.STRING)
+    @Column (name = "access_rights")
+    private AccessRights accessRights;
+
+    @Column (name = "password")
+    private String password;
 }
