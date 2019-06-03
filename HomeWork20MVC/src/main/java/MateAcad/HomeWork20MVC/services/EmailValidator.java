@@ -21,6 +21,7 @@ public class EmailValidator implements Validator {
 
     @Override
     public void validate(Object o, Errors errors) {
+
         Programmer programmer = (Programmer) o;
         Pattern pattern = Pattern.compile(emailPattern);
         if (!pattern.matcher(programmer.getEmail()).matches()) {

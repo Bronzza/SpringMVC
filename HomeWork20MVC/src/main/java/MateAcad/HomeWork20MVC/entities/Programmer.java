@@ -12,16 +12,21 @@ import lombok.ToString;
 import lombok.experimental.Accessors;
 import org.springframework.format.annotation.DateTimeFormat;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.EntityListeners;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
 import java.time.LocalDate;
+import java.util.Set;
 
 
 @Table(name = "programmers")
@@ -49,11 +54,4 @@ public class Programmer extends CreatableEntity {
     @Email
     @Column(name = "email")
     private String email;
-
-    @Enumerated (EnumType.STRING)
-    @Column (name = "access_rights")
-    private AccessRights accessRights;
-
-    @Column (name = "password")
-    private String password;
 }
