@@ -36,5 +36,10 @@
     <br/>
     <a class="button" th:href="@{'/new'}">Create a programmer</a>
 </div>
+
+<form th:action="@{/logout}" method="post">
+    <input type="submit" value="Sign Out"/>
+</form>
+
 </body>
 </html>
